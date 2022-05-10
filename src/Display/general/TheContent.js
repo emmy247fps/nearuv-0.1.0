@@ -19,7 +19,7 @@ const TheContent = ({ token, userType}) => {
     } else {
       return pubRoutes
     }
-  }
+  } 
   return (
       <Suspense fallback={loading}>
         <Routes>
