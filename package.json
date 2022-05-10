@@ -1,12 +1,18 @@
 {
   "name": "pukeh",
   "version": "0.1.0",
+  "description": "NearU front end  app",
   "private": true,
+  "bugs": {
+    "url": "https://github.com/WGtechy/nearuv-0.1.0/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:WGtechy/nearuv-0.1.0.git"
+  },
+  "author": "Williams Godwin",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "core-js": "^3.22.2",
     "moment": "^2.29.3",
@@ -19,13 +25,19 @@
     "react-scripts": "5.0.1",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.1",
-    "sass": "^1.50.1",
     "sass-loader": "^12.6.0",
-    "styled-components": "^5.3.5",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "sass": "^1.50.1",
     "web-vitals": "^2.1.4"
   },
+  
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=4000 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
