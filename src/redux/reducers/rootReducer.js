@@ -1,4 +1,4 @@
-import { combineReducers } from "redux";
+// import { combineReducers } from "redux";
 import {
   sidebarReducer,
   sideMenuContentReducer,
@@ -12,7 +12,7 @@ import {
   getGlobalStoreProductInfoBySlugReducer
 } from "../reducers";
 
-const rootReducer = combineReducers({
+const reducer = {
   selectedGlobalItem: getGlobalStoreProductInfoBySlugReducer,
   category: categoryReducer,
   video: videoReducer,
@@ -20,6 +20,6 @@ const rootReducer = combineReducers({
   sidebar: sidebarReducer,
   sideMenuContent: sideMenuContentReducer,
   topMenuData: topMenuDataReducer,
-});
+};
 
-export default rootReducer;
+export default reducer;
