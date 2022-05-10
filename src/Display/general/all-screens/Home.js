@@ -8,7 +8,6 @@ import { AiFillEye } from "react-icons/ai";
 import { videos } from "../../../utilities";
 import { useDispatch } from "react-redux";
 import { clickedVideos } from "../../../redux/actions/video.actions";
-import MainLayout from "../MainLayout";
 
 
 const Home = () => {
@@ -19,7 +18,7 @@ const Home = () => {
   };
 
   return (
-    <MainLayout>
+    <>
       <SubHeader />
       <Container
       //  className={
@@ -38,7 +37,7 @@ const Home = () => {
                 <img src={values.profilePicture} alt={values.profileName} />
                 <p>{values.profileName}</p>
               </div>
-              <VideoComponent
+              {/* <VideoComponent
                 onClick={() => toggle(values)}
                 classNameContainer="video"
                 classNameVideoTop="video__top"
@@ -53,12 +52,12 @@ const Home = () => {
                   </span>
                   <span>{values.uploadTime}</span>
                 </div>
-              </VideoComponent>
+              </VideoComponent> */}
             </Col>
           ))}
         </Row>
       </Container>
-    </MainLayout>
+    </>
   );
 };
 

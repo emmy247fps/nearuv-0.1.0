@@ -5,6 +5,7 @@ import MobileMenu from "./small-screen-important/MobileMenu";
 import { useDispatch, useSelector } from "react-redux";
 import { topMenuData } from "../../redux/actions";
 import { sidebarAction } from "../../redux/actions";
+import TheContent from "./TheContent";
 // import PrivateRouting from "./PrivateRouting";
 
 const MainLayout = (props) => {
@@ -44,8 +45,9 @@ const MainLayout = (props) => {
       />
       <Sidebar activeElement={activeElement} handleNavItem={handleNavItem} />
       <div className="layoutOne__container">
-        {props.children}
+       <TheContent />
       </div>
+      
       <MobileFooterMenu className="mobileView" />
     </>
   );
