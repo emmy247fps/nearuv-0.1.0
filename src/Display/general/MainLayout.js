@@ -5,7 +5,7 @@ import MobileMenu from "./small-screen-important/MobileMenu";
 import { useDispatch, useSelector } from "react-redux";
 import { topMenuData } from "../../redux/actions";
 import { sidebarAction } from "../../redux/actions";
-import PrivateRouting from "./PrivateRouting";
+// import PrivateRouting from "./PrivateRouting";
 
 const MainLayout = (props) => {
   const sidebar = useSelector((state) => state.sidebar);
