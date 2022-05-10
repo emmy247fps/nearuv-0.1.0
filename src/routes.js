@@ -10,12 +10,12 @@ const allPages = {
 };
 
 const pubRoutes = [
-  { path: "/", exact: true, name: "Home", component: allPages.general.Home },
-  // {path: "/:slug", name: "Product name", component: allPages.general.ProductListPage },
+  { path: "/", exact: true, name: "Home", element: allPages.general.Home },
+  // {path: "/:slug", name: "Product name", element: allPages.general.ProductListPage },
   {
     path: "/player-page",
     name: "Player page",
-    component: allPages.general.PlayerPage,
+    element: allPages.general.PlayerPage,
   },
 ];
 

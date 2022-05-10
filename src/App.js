@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom'
 import { useDispatch } from "react-redux";
 import { ThemeProvider } from "styled-components";
-import { getAllCategory } from "./redux/actions";
+// import { getAllCategory } from "./redux/actions";
 import { LightTheme, DarkTheme, OrangeTheme, GlobalStyles } from "./themes.js";
-import PrivateRoute from "./comp-files/hoc/PrivateRoute";
 import { PageLoading } from "./comp-files/hoc/Loading";
+import MainLayout from "./Display/general/MainLayout";
 
 const App = () => {
   const [theme, setTheme] = useState("light");
@@ -24,9 +24,9 @@ const App = () => {
     import("./Display/general/all-screens/GlobalStoreProductInfo")
   );
 
-  useEffect(() => {
-    dispatch(getAllCategory());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(getAllCategory());
+  // }, [dispatch]);
 
   return (
     <BrowserRouter>
@@ -42,16 +42,11 @@ const App = () => {
         >
           <GlobalStyles />
         <Routes>
-          <Route path="/" name="Home" element={<Home />} />
-          <Route
-              path="/:slug"
-              name="Product page"
-              element={<ProductListPage/>}
-            />
+         
             <Route
-              path="/store/:slug"
-              name="Global store"
-              component={<GlobalStoreItem/>}
+              path="*"
+              name="Home"
+              element={<MainLayout/>}
             />
         </Routes>
         </ThemeProvider>

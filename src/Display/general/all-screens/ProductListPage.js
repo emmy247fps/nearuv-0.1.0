@@ -36,7 +36,7 @@ const ProductListPage = (props) => {
   };
 
   return (
-    <MainLayout>
+    <>
       {/* <GlobalProductStoreInfoCanvas  show={canvas} hide={setCanvas} productInfo={productInfo} setProductInfo={setProductInfo} />
       <SellersCanvas show={canvas} hide={setCanvas} /> */}
       <div className="product__display">
@@ -68,7 +68,7 @@ const ProductListPage = (props) => {
           </Link>
         ))}
       </div>
-    </MainLayout>
+    </>
   );
 };
 

@@ -34,9 +34,9 @@ export const Sidebar = (props) => {
     };
   });
 
-  useEffect(() => {
-    dispatch(getAllCategory());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(getAllCategory());
+  // }, [dispatch]);
 
   const handleNavItem = (active, content) => {
     if (selector.sidebar.display) dispatch(sidebarAction(false));

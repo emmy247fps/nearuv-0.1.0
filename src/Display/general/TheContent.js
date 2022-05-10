@@ -10,7 +10,7 @@ const loading = (
   </div>
 )
 
-const TheContent = ({ token, userType}) => {
+const TheContent = () => {
  const token = false
 
   let routes = () => {
@@ -36,7 +36,6 @@ const TheContent = ({ token, userType}) => {
               )
             )
           })}
-          {/* <Route path="/cell" element={<Navigate to="/cell" replace />} /> */}
         </Routes>
         
       </Suspense>
