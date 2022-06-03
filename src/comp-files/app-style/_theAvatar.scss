@@ -1,0 +1,29 @@
+@import "../../base";
+
+.footer {
+  display: none
+}
+
+
+.profileImage {
+  @include profileImage(0, 45px, 45px)
+}
+
+//mobile
+@media screen and (max-width: $breakpoint-small) {
+  .profileImage {
+    @include profileImage(0, 30px, 30px)
+  }
+} ;
+//laptop
+@media screen and (max-width: $breakpoint-medium) {
+  // .profileImage {
+  //   @include profileImage(0, 45px, 45px)
+  // }
+} ;
+//tab
+@media screen and (max-width: $breakpoint-low-medium) {
+  // .profileImage {
+  //   @include profileImage(0, 43px, 43px)
+  // }
+} ;

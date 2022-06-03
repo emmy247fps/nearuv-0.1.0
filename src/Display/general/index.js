@@ -1,9 +1,15 @@
-import Home from "./all-screens/Home";
-import DesktopCategoryMenu from "./large-screens-important/SubHeader";
-import {Header} from "./large-screens-important/Header";
-import {Sidebar} from "./large-screens-important/Sidebar";
-import MobileCategoryMenu from "./small-screen-important/MobileCategoryMenu";
-import MobileFooterMenu from "./small-screen-important/MobileFooterMenu";
+import {lazy} from 'react'
+const largeScreenPath = './large-screens-important'
+const mobileScreenPath = './small-screen-important'
+
+const  Home = lazy(()=> import('./all-screens/Home'));
+const  DesktopCategoryMenu = lazy(()=> import(`${largeScreenPath}/SubHeader`));
+const  ProductListPage = lazy(()=> import(`${largeScreenPath}/ProductListPage`));
+const  PlayerPage = lazy(()=> import(`${largeScreenPath}/PlayerPage`));
+const  Header = lazy(()=>import(`${largeScreenPath}/Header`));
+const  Sidebar = lazy(()=>import(`${largeScreenPath}/Sidebar`));
+const  MobileCategoryMenu = lazy(()=> import(`${mobileScreenPath}/MobileCategoryMenu`));
+const  MobileFooterMenu = lazy(()=> import(`${mobileScreenPath}/MobileFooterMenu`));
 
 
 export {
@@ -12,5 +18,7 @@ export {
     Header,
     Sidebar,
     MobileCategoryMenu,
-    MobileFooterMenu
+    MobileFooterMenu,
+    ProductListPage,
+    PlayerPage
 };

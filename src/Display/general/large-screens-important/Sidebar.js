@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import "../../../comp-files/app-style/_sideBar.scss";
 import { Link } from "react-router-dom";
 import {
@@ -16,7 +16,7 @@ import {
 } from "../../../redux/actions/canvas";
 import {publicNav} from "../../../comp-files/Navigation/_nav"
 
-export const Sidebar = (props) => {
+const Sidebar = (props) => {
   const [activeElement, setActiveElement] = useState("");
   // const [menuDisplayContent, setMenuDisplayContent] = useState([]);
   // const category = useSelector((state) => state.category.categories);
@@ -110,3 +110,4 @@ export const Sidebar = (props) => {
     </>
   );
 };
+export default memo(Sidebar)
