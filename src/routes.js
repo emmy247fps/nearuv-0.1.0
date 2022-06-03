@@ -1,12 +1,12 @@
-import React from "react";
-const link = "./Display/general/all-screens";
+import {react} from "react";
+import {Home, ProductListPage, PlayerPage} from "./Display/general";
 
 const allPages = {
   general: {
-    Home: React.lazy(() => import(`${link}/Home`)),
-    ProductListPage: React.lazy(() => import(`${link}/ProductListPage`)),
-    PlayerPage: React.lazy(() => import(`${link}/PlayerPage`)),
-  },
+    Home,
+    ProductListPage,
+    PlayerPage
+  }
 };
 
 const pubRoutes = [
@@ -19,6 +19,14 @@ const pubRoutes = [
   },
 ];
 
-const privRoutes = {};
+const privRoutes = [
+  { path: "/", exact: true, name: "Home", element: allPages.general.Home },
+  {path: "/:slug", name: "Product name", element: allPages.general.ProductListPage },
+  {
+    path: "/player-page",
+    name: "Player page",
+    element: allPages.general.PlayerPage,
+  },
+];
 
 export { privRoutes, pubRoutes };

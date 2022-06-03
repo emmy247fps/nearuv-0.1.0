@@ -6,14 +6,17 @@ import { ThemeProvider } from "styled-components";
 import { LightTheme, DarkTheme, OrangeTheme, GlobalStyles } from "./themes.js";
 import { PageLoading } from "./comp-files/hoc/Loading";
 import MainLayout from "./Display/general/MainLayout";
+import { CommentPage } from "./Display/private/index.js";
 
 const App = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const dispatch = useDispatch();
+  const token = true
 
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
+
 
   const Home = React.lazy(() => import("./Display/general/all-screens/Home"));
   const ProductListPage = React.lazy(() =>
@@ -42,6 +45,12 @@ const App = () => {
         >
           <GlobalStyles />
         <Routes>
+          {token && <Route
+              path="/comment/:slug"
+              name="Comment"
+              element={<CommentPage/>}
+            /> }
+        
          
             <Route
               path="*"

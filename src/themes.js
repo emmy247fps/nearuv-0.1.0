@@ -35,7 +35,7 @@ const LightTheme = {
   badge: color.blackSecondary,
   hoverColor: color.redPrimary,
   sidebarBackground: color.whiteSecondary,
-  hoverBackground: color.whitePrimary,
+  hoverBackground: color.whiteSecondary,
   icontTransition: color.iconTransitionWhitePrimary,
   productCardShadow: color.whiteBoxShadowSecondary,
   topMenuBlockedContent: color.whiteGrayBlockedContent,
@@ -55,7 +55,7 @@ const OrangeTheme =  {
     badge: color.whiteSecondary,
     hoverColor: color.redPrimary,
     sidebarBackground: color.orangeSecondary,
-    hoverBackground: color.orangePrimary,
+    hoverBackground: color.orangeSecondary,
     iconTransition: color.iconTransitionBlackPrimary,
     productCardShadow: color.whitePrimary,
     topMenuBlockedContent: color.whiteGrayBlockedContent,
@@ -69,7 +69,7 @@ const DarkTheme = {
   fontColor: color.whiteSecondary,
   headerBackground: color.blackPrimary,
   iconsColor: color.whitePrimary,
-  badgeFontColor: color.whitePrimary,
+  badgeFontColor: color.blackPrimary,
   badgeBackground: color.blackPrimary,
   searchBarBackground: color.grey,
   border: color.whiteSecondary,
@@ -77,7 +77,7 @@ const DarkTheme = {
   badge: color.whiteSecondary,
   hoverColor: color.redPrimary,
   sidebarBackground: color.blackSecondary,
-  hoverBackground: color.blackPrimary,
+  hoverBackground: color.blackSecondary,
   iconTransition: color.iconTransitionBlackPrimary,
   productCardShadow: color.whiteBoxShadowSecondary,
   topMenuBlockedContent: color.whiteGrayBlockedContent,
@@ -99,6 +99,9 @@ body {
 
 .header__icons, .video__canvas__left__content__video__icons, .sidebar li, .header__icons__environment, .header__left__menu{
     color: ${props => props.theme.iconsColor}
+}
+.header__left__logo{
+    background-color: ${(props) => props.theme.iconsColor}
 }
 
 .search__bar {
@@ -233,10 +236,31 @@ a {
     background: ${props => props.theme.sellersCanvasItems}
 }
 
+.product__card__wrapper {
+    background: ${(props) => props.theme.headerBackground }
+}
 
+.overlay {
+    background-color: ${props => props.theme.hoverBackground}
+}
 
+.overlay__name, .overlayText {
+    color: ${props => props.theme.fontColor}
+}
+.cardHeader {
+    background-color: ${props => props.theme.hoverBackground}
+}
 
+.product_container_items img {
+    box-shadow: 0px 0px 3px 0px ${props => props.theme.productCardShadow}
+}
+.profile__img {
+    border-color: ${props => props.theme.border}
+}
+.icons__IoIosInformation{
+    color: ${props => props.theme.iconsColor
 
+}
 `;
 
 export { LightTheme, DarkTheme, OrangeTheme, GlobalStyles };

@@ -10,7 +10,7 @@ import { AiFillEnvironment, AiOutlineMessage } from "react-icons/ai";
 import { SearchBar } from "../../../comp-files";
 import { sidebarAction, sideMenuContentAction } from "../../../redux/actions/canvas";
 
-export const Header = ({handleToggleMobileMenu}) => {
+ const Header = ({handleToggleMobileMenu}) => {
   const sidebar = useSelector((state) => state.sidebar);
   const topMenuDisplay = useSelector(state=>state.sideMenuContent.display)
   const dispatch = useDispatch();
@@ -96,3 +96,4 @@ export const Header = ({handleToggleMobileMenu}) => {
     </>
   );
 };
+export default Header

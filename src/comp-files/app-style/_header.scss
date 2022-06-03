@@ -33,7 +33,7 @@
     align-items: center;
 
     &__img {
-      @include profileImage(5px);
+      @include profileImage(5px,50px,50px, );
     }
 
     &__more {
@@ -86,9 +86,3 @@
   }
 }
 
-
-@media screen and (max-width: $breakpoint-medium) {
- .header__left__menu {
-   display: block;
- } 
-}

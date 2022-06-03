@@ -1,32 +1,80 @@
 import React, { useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
 import "../../../comp-files/app-style/_home.scss";
 import "../../../comp-files/app-style/_video.scss";
-import SubHeader from "../large-screens-important/SubHeader";
-import { VideoComponent } from "../../../comp-files";
-import { AiFillEye } from "react-icons/ai";
-import { videos } from "../../../utilities";
 import { useDispatch } from "react-redux";
 import { clickedVideos } from "../../../redux/actions/video.actions";
+import { Link, useLinkClickHandler, useNavigate } from 'react-router-dom'
+import { productCard } from '../../../utilities'
+import CardHeader from "../../../comp-files/hoc/CardHeader";
+import { useHistory } from 'react-router-dom'
+// import { SlidingInfo } from "../../../comp-files/components";
+import Status from "../../../comp-files/components/Status";
+import CommentPage from "../../private/small-screen-important/CommentPage";
+
+
 
 
 const Home = () => {
+  const [open, setOpen] = useState(false)
+  const [data, setData] = useState({})
   const dispatch = useDispatch();
-
+  const navigate = useNavigate()
   const toggle = (values) => {
     dispatch(clickedVideos(values));
   };
+  // const histroy = useHistory();
+
+  const handleClick = (x) => {
+    console.log(x);
+    setData(x)
+    setOpen(true)
+  }
+  const clickHandler =()=>{
+    if(open === true){setOpen(false)}
+  }
 
   return (
     <>
-      <SubHeader />
+    <Status 
+    className='status'/>
+      <div className='homeContainer' onClick={clickHandler}>
+        {productCard.map((item, index) => (
+          <div className="homeContainerItems" key={index}>
+            {/* onClick={() => {
+              navigate.push('/product');
+            }} */}
+            <img src={item.img} style={{ width: "100%" }} className="homeContainerItemsImage" />
+            <CardHeader
+              className="cardHeader"
+              username={item.username}
+              profilePicture={item.profilePicture}
+              open={open}
+              handleClick={()=>handleClick(item)}
+            />
+            <div className='overlay'>
+              <span className='overlayText'>{item.text}</span>
+              <span className='rating'>rating: 🌟🌟🌟🌟</span>
+            </div>
+          </div>
+        ))
+        }
+
+      </div>
+
+
+      {/* <SlidingInfo  data={data} /> */}
+
+
+
+      {/* <ProductCard /> */}
+      {/* <SubHeader />
       <Container
       //  className={
-        //   toggleSidebar || toggleVideoCanvasPlayer
-        //     ? // || toggleMobileMenu
-        //       "content__area close"
-        //     : "content__area"
-        // }
+      //     toggleSidebar || toggleVideoCanvasPlayer
+      //       ? // || toggleMobileMenu
+      //         "content__area close"
+      //       : "content__area"
+      //   }
         className ="content__area"
        
       >
@@ -37,7 +85,7 @@ const Home = () => {
                 <img src={values.profilePicture} alt={values.profileName} />
                 <p>{values.profileName}</p>
               </div>
-              {/* <VideoComponent
+              <VideoComponent
                 onClick={() => toggle(values)}
                 classNameContainer="video"
                 classNameVideoTop="video__top"
@@ -52,11 +100,11 @@ const Home = () => {
                   </span>
                   <span>{values.uploadTime}</span>
                 </div>
-              </VideoComponent> */}
+              </VideoComponent>
             </Col>
           ))}
         </Row>
-      </Container>
+      </Container> */}
     </>
   );
 };

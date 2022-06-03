@@ -32,6 +32,7 @@ const globalSellersIcons = [
       icon: IoIosShareAlt,
       size: 25,
     },
+  
   ];
 
 export {

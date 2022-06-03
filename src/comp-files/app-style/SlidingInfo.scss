@@ -1,0 +1,96 @@
+@import "../../base";
+.mobileOverlay{
+  display: none;
+}
+
+@media screen and (max-width: $breakpoint-small) {
+  input::placeholder {
+    font-size: 17px;
+  }
+  .mobileOverlay{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .itemOverlay{
+    position: fixed;
+    display: flex;
+  flex-direction: column;
+   bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    padding: 0 10px;
+    border-radius: 15px 15px 0 0;
+    z-index: 1;
+ background: red;
+    }
+  .cardInfo{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+ 
+  }
+  .cardInfo .cardItems{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+// padding: 10px;
+margin-top: 10%;
+  }
+  .rating{
+    font-size: 0.8rem;
+   margin-top: 1px;
+     }
+     .description{
+      font-size: 1.2rem;
+       padding-left: 25px;
+       padding-top: 10px;
+       @include line-clamp(4)
+       
+     }
+     .SubmitIcon{
+       padding: 10px;
+     }
+     .addedComment{
+       padding-left: 25px;
+       font-size: 0.6rem;
+       max-Width: 100vw;
+     }
+     .comment {
+      display: flex;
+      flex: 0.6;
+      padding: 10px;
+      margin: 0.8rem;
+      border-radius: 3px;
+      border-radius: 8px;
+      // margin-top: 10px;
+
+    
+
+      textarea {
+        width: 100%;
+        border: none;
+        font-weight: 500;
+        padding: 0.3rem;
+        // background: transparent;
+    
+        &:focus {
+          outline: none;
+        }
+      }
+    
+      button{
+        // border: none;
+        padding: 0 0.2rem;
+        // background: transparent;
+        outline: none;
+        &:focus{
+            border: none
+        }
+      }
+    }
+}

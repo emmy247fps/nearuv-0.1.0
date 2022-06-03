@@ -11,7 +11,7 @@ const loading = (
 )
 
 const TheContent = () => {
- const token = false
+ const token = true
 
   let routes = () => {
     if (token ) {
@@ -23,19 +23,16 @@ const TheContent = () => {
   return (
       <Suspense fallback={loading}>
         <Routes>
-          {routes().map((route, idx) => {
-            return (
-              route.element && (
+          {routes().map((route, i) => route.element && (
                 <Route
-                  key={idx}
+                  key={i}
                   path={route.path}
                   exact={route.exact}
                   name={route.name}
                   element={<route.element />}
                 />
               )
-            )
-          })}
+            )}
         </Routes>
         
       </Suspense>
