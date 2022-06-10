@@ -70,7 +70,7 @@ const Home = () => {
         data={data}
         open={open} />
 
-
+<h1>hi</h1>
 
 
 
