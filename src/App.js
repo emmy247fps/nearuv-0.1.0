@@ -9,7 +9,7 @@ import MainLayout from "./Display/general/MainLayout";
 import { CommentPage } from "./Display/private/index.js";
 
 const App = () => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const dispatch = useDispatch();
   const token = true
 

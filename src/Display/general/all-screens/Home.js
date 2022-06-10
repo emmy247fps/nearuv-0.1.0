@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../../comp-files/app-style/_home.scss";
+// import "../../../comp-files/app-style/_mobileCategoryMenu.scss";
 import "../../../comp-files/app-style/_video.scss";
 import { useDispatch } from "react-redux";
 import { clickedVideos } from "../../../redux/actions/video.actions";
@@ -7,10 +8,10 @@ import { Link, useLinkClickHandler, useNavigate } from 'react-router-dom'
 import { productCard } from '../../../utilities'
 import CardHeader from "../../../comp-files/hoc/CardHeader";
 import { useHistory } from 'react-router-dom'
-// import { SlidingInfo } from "../../../comp-files/components";
 import Status from "../../../comp-files/components/Status";
-import CommentPage from "../../private/small-screen-important/CommentPage";
-
+// import CommentPage from "../../private/small-screen-important/CommentPage";
+import { SlidingInfo } from "../../../comp-files/components";
+import { IoMdPlay } from "react-icons/io";
 
 
 
@@ -29,15 +30,15 @@ const Home = () => {
     setData(x)
     setOpen(true)
   }
-  const clickHandler =()=>{
-    if(open === true){setOpen(false)}
+  const clickHandler = () => {
+    if (open === true) { setOpen(false) }
   }
 
   return (
     <>
-    <Status 
-    className='status'/>
-      <div className='homeContainer' onClick={clickHandler}>
+      <Status
+        className='status' />
+      <div className='homeContainer' >
         {productCard.map((item, index) => (
           <div className="homeContainerItems" key={index}>
             {/* onClick={() => {
@@ -49,20 +50,27 @@ const Home = () => {
               username={item.username}
               profilePicture={item.profilePicture}
               open={open}
-              handleClick={()=>handleClick(item)}
+              handleClick={() => handleClick(item)}
             />
+            <div className="videoIcon">
+            <IoMdPlay className="playIcon" size={45} />
+            </div>
+            
             <div className='overlay'>
               <span className='overlayText'>{item.text}</span>
-              <span className='rating'>rating: 🌟🌟🌟🌟</span>
+              <span className='rating'>{item.rating}</span>
             </div>
           </div>
         ))
         }
-
       </div>
+      
+      <SlidingInfo
+        clickHandler={() => clickHandler()}
+        data={data}
+        open={open} />
 
 
-      {/* <SlidingInfo  data={data} /> */}
 
 
 

@@ -1,0 +1,61 @@
+.homeContainer{
+    display: block;
+    margin-top: 60px;
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    column-gap:1px;
+    padding: 0 12px;
+    user-select: none;
+    }
+.homeContainerItems{
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+}
+.homeContainerItems:hover {
+    transform: scale(.9);
+}
+.homeContainerItems:hover:after{
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+.homeContainerItems:hover .overlay{
+    opacity: 1;
+}
+.homeContainerItems:hover .img{
+transform: scale(1.25);
+}
+.homeContainerItems:hover .cardHeader{
+    transform: translate(0);
+    opacity: 1;
+}
+.homeContainerItems:after{
+    width: 100%;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 0;
+    position: absolute;
+    z-index: 20;
+    transition: all .25s ease;
+}
+.homeContainerItems img{
+    z-index: 10;
+    transition: all .25s ease;
+}
+.homeContainerItems .overlay{
+    z-index: 30;
+    position: absolute;
+    bottom: 0px;
+    color: azure;
+    
+}

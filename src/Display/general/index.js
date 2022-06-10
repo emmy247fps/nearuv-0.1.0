@@ -10,6 +10,7 @@ const  Header = lazy(()=>import(`${largeScreenPath}/Header`));
 const  Sidebar = lazy(()=>import(`${largeScreenPath}/Sidebar`));
 const  MobileCategoryMenu = lazy(()=> import(`${mobileScreenPath}/MobileCategoryMenu`));
 const  MobileFooterMenu = lazy(()=> import(`${mobileScreenPath}/MobileFooterMenu`));
+const  CommentLayout = lazy(()=> import(`./CommentLayout`));
 
 
 export {
@@ -20,5 +21,6 @@ export {
     MobileCategoryMenu,
     MobileFooterMenu,
     ProductListPage,
-    PlayerPage
+    PlayerPage,
+    CommentLayout
 };

@@ -1,11 +1,15 @@
 import {react} from "react";
 import {Home, ProductListPage, PlayerPage} from "./Display/general";
+import {CommentPage} from "./Display/private";
 
 const allPages = {
   general: {
     Home,
     ProductListPage,
-    PlayerPage
+    PlayerPage,
+  },
+  private:{
+    CommentPage
   }
 };
 
@@ -26,6 +30,11 @@ const privRoutes = [
     path: "/player-page",
     name: "Player page",
     element: allPages.general.PlayerPage,
+  },
+  {
+    path: "/comment/:slug",
+    name: "Comment Page",
+    element: allPages.private.CommentPage,
   },
 ];
 
