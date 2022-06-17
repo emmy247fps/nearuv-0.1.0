@@ -4,7 +4,7 @@ import './productCard.css'
 
 
 
-function productCard () {
+function ProductCard () {
   return (
      <div class="product">
 		 <div className='product_container'>
@@ -23,5 +23,5 @@ function productCard () {
   )
 }
 
-export default productCard
+export default ProductCard
 

@@ -10,8 +10,9 @@ import CardHeader from "../../../comp-files/hoc/CardHeader";
 import { useHistory } from 'react-router-dom'
 import Status from "../../../comp-files/components/Status";
 // import CommentPage from "../../private/small-screen-important/CommentPage";
-import { SlidingInfo } from "../../../comp-files/components";
-import { IoMdPlay } from "react-icons/io";
+import { TheAvatar } from "../../../comp-files/components";
+import { IoMdPlay, IoIosCafe, IoIosChatbubbles,IoIosPeople, IoIosCheckmarkCircleOutline } from "react-icons/io";
+import { CommentPage } from "../../private";
 
 
 
@@ -34,43 +35,67 @@ const Home = () => {
     if (open === true) { setOpen(false) }
   }
 
+  const link = (yoo) => {
+    console.log(yoo);
+    // path="/ProductCard/:slug"
+    // name="Product Card"
+    // // element={<ProductCard/>}
+  }
+
   return (
     <>
       <Status
         className='status' />
+
+      {/* <CommentPage
+        clickHandler={() => clickHandler()}
+        data={data}
+        open={open} /> */}
+
       <div className='homeContainer' >
+
         {productCard.map((item, index) => (
-          <div className="homeContainerItems" key={index}>
-            {/* onClick={() => {
-              navigate.push('/product');
-            }} */}
-            <img src={item.img} style={{ width: "100%" }} className="homeContainerItemsImage" />
-            <CardHeader
-              className="cardHeader"
-              username={item.username}
-              profilePicture={item.profilePicture}
-              open={open}
-              handleClick={() => handleClick(item)}
-            />
-            <div className="videoIcon">
+          <div className="homeContainerItems" key={index} onClick={link}>
+            {/* <Link to={`/ProductCard/:slug`}> */}
+            <img src={item.img} style={{ width: "100%" }} 
+             className="homeContainerItemsImage" />
+            {/* </Link>  */}
+            {/* <div className="videoIcon">
             <IoMdPlay className="playIcon" size={45} />
-            </div>
-            
+            </div> */}
+
             <div className='overlay'>
-              <span className='overlayText'>{item.text}</span>
-              <span className='rating'>{item.rating}</span>
+              <div className='cardHeaderDesktopView'>
+                <TheAvatar link={item.username} imgUrl={item.profilePicture} />
+                <div className="id">
+                  <span className='userName'>simplydigital</span>
+                  <div className="iconP" >
+                    <IoIosPeople size={15} />
+                    <div className="numFollowers"><b>24k</b></div>
+                    
+                    {/* <div className='rating'><b>R</b>:{item.rating}</div> */}
+                  </div>
+                </div>
+            <IoIosChatbubbles size={23} className="mobileIcon"/>
+
+              </div>
+             
+              <div className="info">
+                <span className='overlayText'>{item.text}</span>
+              </div>
+               {/* icon for mobile view only */}
             </div>
           </div>
         ))
         }
       </div>
-      
-      <SlidingInfo
+
+      {/* <SlidingInfo
         clickHandler={() => clickHandler()}
         data={data}
-        open={open} />
+        open={open} /> */}
 
-<h1>hi</h1>
+
 
 
 

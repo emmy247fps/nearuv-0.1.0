@@ -7,6 +7,7 @@ import { LightTheme, DarkTheme, OrangeTheme, GlobalStyles } from "./themes.js";
 import { PageLoading } from "./comp-files/hoc/Loading";
 import MainLayout from "./Display/general/MainLayout";
 import { CommentPage } from "./Display/private/index.js";
+import ProductCard from "./product/productCard.js";
 
 const App = () => {
   const [theme, setTheme] = useState("light");
@@ -45,13 +46,17 @@ const App = () => {
         >
           <GlobalStyles />
         <Routes>
+        {token && <Route
+        
+              path="/ProductCard/:slug"
+              name="Product Card"
+              element={<ProductCard/>}
+            />}
           {token && <Route
               path="/comment/:slug"
-              name="Comment"
+              name="Comment page"
               element={<CommentPage/>}
-            /> }
-        
-         
+            />}
             <Route
               path="*"
               name="Home"

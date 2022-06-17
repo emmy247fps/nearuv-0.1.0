@@ -240,16 +240,16 @@ a {
     background: ${(props) => props.theme.headerBackground }
 }
 
-.overlay {
-    background-color: ${props => props.theme.hoverBackground}
-}
+// .overlay {
+//     background-color: ${props => props.theme.hoverBackground}
+// }
 
 .overlay__name, .overlayText {
-    color: ${props => props.theme.fontColor}
+    color: ${props =>props.theme.hoverBackground }
 }
-.cardHeader {
-    background-color: ${props => props.theme.hoverBackground}
-}
+// .cardHeader {
+//     background-color: ${props => props.theme.hoverBackground}
+// }
 
 .product_container_items img {
     box-shadow: 0px 0px 3px 0px ${props => props.theme.productCardShadow}
@@ -258,9 +258,12 @@ a {
     border-color: ${props => props.theme.border}
 }
 .icons__IoIosInformation{
-    color: ${props => props.theme.iconsColor
-
+    color: ${props => props.theme.iconsColor}
+.commentNavbar{
+    background-color: ${props => props.theme.fontColor};
+    color: ${props => props.theme.fontColor}
 }
+
 `;
 
 export { LightTheme, DarkTheme, OrangeTheme, GlobalStyles };
