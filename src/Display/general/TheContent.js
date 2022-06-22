@@ -1,6 +1,7 @@
 import React, { Suspense, useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Route, Routes } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 import { privRoutes, pubRoutes } from '../../routes'
 
@@ -10,8 +11,10 @@ const loading = (
   </div>
 )
 
-const TheContent = () => {
+const TheContent = (props) => {
  const token = true
+ const history = useLocation()
+ console.log(history)
 
   let routes = () => {
     if (token ) {

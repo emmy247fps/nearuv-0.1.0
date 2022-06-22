@@ -1,25 +1,20 @@
 import React from 'react'
+import { Header } from '../Display/general/index.js'
+// import MainLayout from '../Display/general/MainLayout.js'
 import Items from './items.js'
 import './productCard.css'
 
 
 
-function ProductCard () {
+function ProductCard (items) {
   return (
+    <>
+    <Header />
      <div class="product">
-		 <div className='product_container'>
-			
-
-		  <div className='product_row'>
-			  <Items />
-			  <Items />
-			  <Items />
-			  <Items />
-			  </div>    
-		 </div>
- 
+	produt description page
+	<div>{items.img}</div>
  </div>
-    
+ </>
   )
 }
 

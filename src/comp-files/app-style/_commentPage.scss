@@ -10,14 +10,10 @@
   //   }
 
   .comment {
-    // height: 100%;
-    //     display: flex;
-    //     justify-content: space-between;
-
     position: absolute;
     top: 0;
     left: 0;
-
+    padding: 1rem;
     &Header {
       position: fixed;
       top: 0;
@@ -28,23 +24,36 @@
       display: flex;
       flex-direction: column;
       box-shadow: inset 0px 0px 0px 1px;
-      // padding: 0 10px;
       .commentNavbar{
         height: 50px;
         box-shadow: inset 0px 0px 0 px 1px;
-      // background: rgb(80, 80, 82);
       }
       .form {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100vw
+        width: 100vw;
+        padding: 1rem;
+        background: whitesmoke;
+      }
+      .SubmitIcon{
+        // background: red;
+        // color: blue;
+        background: white;
+        width: 11%;
+        font-weight: 200;
+        padding: 0.3rem;
+        border-radius: 0px 10px 10px 0px;
       }
       .textarea{
         width: 80%;
           border: none;
           font-weight: 200;
           padding: 0.3rem;
+          border-radius: 10px 0px 0px 10px;
+          &:focus {
+            outline: none;
+          }
       }
       .textarea .SubmitIcon{
         position: absolute;
@@ -52,7 +61,6 @@
         top: 8px;
       }
     }
-
     &Body{
       display: block;
       height: 90%;
@@ -73,23 +81,20 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
-    // padding-top: 380px;
     z-index: 10;
   }
-
   .cardInfo .cardItems {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    // padding-bottom: 50px;
   }
 
   .cardItems {
-    // padding-bottom: 35px;
     border: 1px solid white;
     font-size: 0.8rem;
   }
+ 
 }
     
       //   max-height: 20%;

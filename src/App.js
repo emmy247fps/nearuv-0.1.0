@@ -9,7 +9,7 @@ import MainLayout from "./Display/general/MainLayout";
 import { CommentPage } from "./Display/private/index.js";
 import ProductCard from "./product/productCard.js";
 
-const App = () => {
+const App = (props) => {
   const [theme, setTheme] = useState("light");
   const dispatch = useDispatch();
   const token = true
@@ -52,11 +52,7 @@ const App = () => {
               name="Product Card"
               element={<ProductCard/>}
             />}
-          {token && <Route
-              path="/comment/:slug"
-              name="Comment page"
-              element={<CommentPage/>}
-            />}
+       
             <Route
               path="*"
               name="Home"

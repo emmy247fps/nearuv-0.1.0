@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, createRef } from "react";
 import "../../../comp-files/app-style/_home.scss";
 // import "../../../comp-files/app-style/_mobileCategoryMenu.scss";
 import "../../../comp-files/app-style/_video.scss";
@@ -7,7 +7,7 @@ import { clickedVideos } from "../../../redux/actions/video.actions";
 import { Link, useLinkClickHandler, useNavigate } from 'react-router-dom'
 import { productCard } from '../../../utilities'
 import CardHeader from "../../../comp-files/hoc/CardHeader";
-import { useHistory } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import Status from "../../../comp-files/components/Status";
 // import CommentPage from "../../private/small-screen-important/CommentPage";
 import { TheAvatar } from "../../../comp-files/components";
@@ -16,15 +16,20 @@ import { CommentPage } from "../../private";
 
 
 
-const Home = () => {
+const Home = (props) => {
+  console.log(props)
   const [open, setOpen] = useState(false)
   const [data, setData] = useState({})
   const dispatch = useDispatch();
   const navigate = useNavigate()
+  const history = useLocation()
+  console.log(navigate, history)
   const toggle = (values) => {
     dispatch(clickedVideos(values));
   };
-  // const histroy = useHistory();
+  const [elRefs, setElRefs] = useState([])
+  // const [loading, setLoading] = useState(false)
+  // const histroy = useLocation();
 
   const handleClick = (x) => {
     console.log(x);
@@ -34,13 +39,13 @@ const Home = () => {
   const clickHandler = () => {
     if (open === true) { setOpen(false) }
   }
+useEffect(() => {
+ const refs = Array(productCard.length).fill().map((_, i)=> elRefs[i] || createRef());
 
-  const link = (yoo) => {
-    console.log(yoo);
-    // path="/ProductCard/:slug"
-    // name="Product Card"
-    // // element={<ProductCard/>}
-  }
+ setElRefs(refs);
+}, [productCard]);
+
+
 
   return (
     <>
@@ -54,12 +59,11 @@ const Home = () => {
 
       <div className='homeContainer' >
 
-        {productCard.map((item, index) => (
-          <div className="homeContainerItems" key={index} onClick={link}>
-            {/* <Link to={`/ProductCard/:slug`}> */}
+        {productCard?.map((item, i) => (
+            <Link to={`/ProductCard/:slug`} key={i}>
+          <div className="homeContainerItems" >
             <img src={item.img} style={{ width: "100%" }} 
              className="homeContainerItemsImage" />
-            {/* </Link>  */}
             {/* <div className="videoIcon">
             <IoMdPlay className="playIcon" size={45} />
             </div> */}
@@ -76,7 +80,12 @@ const Home = () => {
                     {/* <div className='rating'><b>R</b>:{item.rating}</div> */}
                   </div>
                 </div>
-            <IoIosChatbubbles size={23} className="mobileIcon"/>
+                <Link ref={elRefs[i]} to={`/comment/:slug`} className="mobileIcon">
+                  <IoIosChatbubbles size={23} 
+                  // selected= {Number(childClicked) == i}
+                  refprop={elRefs[i]}/>
+                </Link>
+            
 
               </div>
              
@@ -86,6 +95,8 @@ const Home = () => {
                {/* icon for mobile view only */}
             </div>
           </div>
+            </Link> 
+
         ))
         }
       </div>

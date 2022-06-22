@@ -1,13 +1,16 @@
 import React, { useState, useRef } from 'react'
 // import { productCard } from '../../utilities'
 import '../../../comp-files/app-style/_commentPage.scss'
-import { IoMdSend, IoIosClose } from "react-icons/io";
+import { IoMdSend, IoMdArrowRoundBack } from "react-icons/io";
 import { TheAvatar } from '../../../comp-files/components';
+import { Link } from 'react-router-dom';
 
 
 
-const CommentPage = ({ open,  clickHandler }) => {
+const CommentPage = (props) => {
+  const { open,  clickHandler, selected, refprop} = props
   const commentRef = useRef()
+  console.table(props)
   const [addedComment, setAddedComment] = useState('')
   let comment = []
   const username = 'testing username'
@@ -22,19 +25,28 @@ rating: '56k',
     e.preventDefault()
     console.log(addedComment)
   }
+  const backHandler = e => {
+    e.preventDefault()
+    
+  }
+  if(selected) refprop?.current?.scollIntoView({ behavior: "smooth", block: "start"})
   return (
 
       <div className='comment'>
       <div className='commentHeader'  onMouseUp={clickHandler}>
         <div className='commentNavbar'>
-        <IoIosClose size={40} onClick={clickHandler} />
+          <Link to={`/`}  >
+        <IoMdArrowRoundBack size={40} 
+        //  onClick={backHandler}
+         />
+        </Link>
         </div>
         <form className='form' onSubmit={handleSubmit} >
             <TheAvatar link={username} imgUrl='/profile.jpg' />
             <textarea className='textarea' type="text" onChange={(e) => setAddedComment(e.target.value)} 
             placeholder="Add comments" 
             onFocus={() => console.log('test')} />
-            <IoMdSend className='SubmitIcon' size={30} />
+            <IoMdSend className='SubmitIcon' size={40} />
           </form>
         </div>
         <div className='commentBody' ref= {commentRef}>

@@ -9,6 +9,7 @@ import { AiFillEnvironment, AiOutlineMessage } from "react-icons/ai";
 // import SearchBar from "../../../comp-files/SearchBar";
 import { SearchBar } from "../../../comp-files";
 import { sidebarAction, sideMenuContentAction } from "../../../redux/actions/canvas";
+// import { Link } from "react-router-dom";
 
  const Header = ({handleToggleMobileMenu}) => {
   const sidebar = useSelector((state) => state.sidebar);
@@ -26,6 +27,7 @@ import { sidebarAction, sideMenuContentAction } from "../../../redux/actions/can
       className: "header__icons__home",
       size: 24,
       action: null,
+      
     },
     {
       icon: MdNotifications,
