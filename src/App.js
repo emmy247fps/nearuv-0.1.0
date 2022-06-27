@@ -7,7 +7,6 @@ import { LightTheme, DarkTheme, OrangeTheme, GlobalStyles } from "./themes.js";
 import { PageLoading } from "./comp-files/hoc/Loading";
 import MainLayout from "./Display/general/MainLayout";
 import { CommentPage } from "./Display/private/index.js";
-import ProductCard from "./product/productCard.js";
 
 const App = (props) => {
   const [theme, setTheme] = useState("light");
@@ -46,13 +45,6 @@ const App = (props) => {
         >
           <GlobalStyles />
         <Routes>
-        {token && <Route
-        
-              path="/ProductCard/:slug"
-              name="Product Card"
-              element={<ProductCard/>}
-            />}
-       
             <Route
               path="*"
               name="Home"

@@ -240,16 +240,9 @@ a {
     background: ${(props) => props.theme.headerBackground }
 }
 
-// .overlay {
-//     background-color: ${props => props.theme.hoverBackground}
-// }
-
 .overlay__name, .overlayText {
     color: ${props =>props.theme.hoverBackground }
 }
-// .cardHeader {
-//     background-color: ${props => props.theme.hoverBackground}
-// }
 
 .product_container_items img {
     box-shadow: 0px 0px 3px 0px ${props => props.theme.productCardShadow}
@@ -259,11 +252,23 @@ a {
 }
 .icons__IoIosInformation{
     color: ${props => props.theme.iconsColor}
+}
 .commentNavbar{
     background-color: ${props => props.theme.fontColor};
     color: ${props => props.theme.fontColor}
 }
-
+commentHeader{
+    background-color: ${props => props.theme.body};
+}
+.subHeader{
+    background-color: ${props => props.theme.sidebarBackground};
+}
+.SubmitIcon{
+    background-color: ${props => props.theme.body};
+}
+.textarea{
+    background-color: ${props => props.theme.body};
+}
 `;
 
 export { LightTheme, DarkTheme, OrangeTheme, GlobalStyles };

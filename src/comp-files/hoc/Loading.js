@@ -1,6 +1,6 @@
 const PageLoading = (
     <div className="pt-3 text-center">
-      <div className="sk-spinner sk-spinner-pulse">loading page</div>
+      <div className="sk-spinner sk-spinner-pulse">loadlgljhglkhing page</div>
     </div>
   );
 

@@ -37,13 +37,12 @@ rating: '56k',
         <div className='commentNavbar'>
           <Link to={`/`}  >
         <IoMdArrowRoundBack size={40} 
-        //  onClick={backHandler}
          />
         </Link>
         </div>
-        <form className='form' onSubmit={handleSubmit} >
+        <form className='subHeader' onSubmit={handleSubmit} >
             <TheAvatar link={username} imgUrl='/profile.jpg' />
-            <textarea className='textarea' type="text" onChange={(e) => setAddedComment(e.target.value)} 
+            <input className='textarea' type="text" onChange={(e) => setAddedComment(e.target.value)} 
             placeholder="Add comments" 
             onFocus={() => console.log('test')} />
             <IoMdSend className='SubmitIcon' size={40} />
@@ -126,7 +125,7 @@ rating: '56k',
           <span className='addedComment'>{addedComment}</span>
         </div>
         
-        <div className='commentFooter'>
+        {/* <div className='commentFooter'>
           <div className='cardInfo'>
             <div className='cardItems'>
               <div className='value'><b>{data.sellers}</b></div>
@@ -145,7 +144,7 @@ rating: '56k',
               <div className='type'><b>Rating</b></div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
   )
 }

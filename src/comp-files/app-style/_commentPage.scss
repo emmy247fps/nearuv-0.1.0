@@ -5,9 +5,6 @@
 }
 
 @media screen and (max-width: $breakpoint-small) {
-  //   input::placeholder {
-  //     font-size: 17px;
-  //   }
 
   .comment {
     position: absolute;
@@ -18,7 +15,6 @@
       position: fixed;
       top: 0;
       left: 0;
-      background-color:  #ffffff;
       border-radius: 0;
       width: 100%;
       display: flex;
@@ -28,21 +24,17 @@
         height: 50px;
         box-shadow: inset 0px 0px 0 px 1px;
       }
-      .form {
+      .subHeader {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100vw;
         padding: 1rem;
-        background: whitesmoke;
       }
       .SubmitIcon{
-        // background: red;
-        // color: blue;
-        background: white;
-        width: 11%;
+        width: 12%;
         font-weight: 200;
-        padding: 0.3rem;
+        // padding: 0.7rem;
         border-radius: 0px 10px 10px 0px;
       }
       .textarea{
@@ -74,7 +66,8 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      background: #ffffff;
+      z-index: 10;
+background: red;
   .cardInfo {
     grid-area: stats;
     display: grid;

@@ -83,7 +83,6 @@ const TopProducts = {
 {name: "Nokia", url: "/nokia.png" }
     ]
 }
-
 const videos = [
   {
     content: "/code-snap.png",
@@ -410,16 +409,22 @@ const productCard = [
 	{
 		key:"1",
 		img:"https://i.pinimg.com/236x/b0/b1/fe/b0b1fef4957026f5c3f75084af89ce8d.jpg",
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
+
 		tagline:"",
      name:"phone",
      type: 'picture',
      profilePicture: '/profile.jpg',
-     username: 'username',
+     username: 'simplydigital',
      sellers: 3000,
+     title: 'title of item',
+     slug: 'title-of-item-by-username',
      comment: 412000000,
      views: 900000,
      rating: '🌟🌟🌟🌟',
-     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+     followers: 2,
+     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"2",
@@ -428,12 +433,15 @@ const productCard = [
      type: 'video',
      name:"laptop",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"3",
@@ -442,12 +450,15 @@ const productCard = [
     name:"charger",
     profilePicture: '/profile.jpg',
      type: 'picture',
-     username: 'username',
+     username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"4",
@@ -455,13 +466,16 @@ const productCard = [
 		tagline:"",
     name:"cable",
     profilePicture: '/profile.jpg',
-    username: 'username',
-     type: 'video',
-     sellers: 300,
-    comment: 412,
+    username: 'simplydigital',
+     type: 'picture',
+      sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
+      comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"5",
@@ -470,12 +484,15 @@ const productCard = [
     name:"rice",
     profilePicture: '/profile.jpg',
     type: 'video',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"6",
@@ -484,12 +501,15 @@ const productCard = [
     name:"beans",
     type: 'video',
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 
 	{
@@ -498,12 +518,15 @@ const productCard = [
 		tagline:"",
     name:"garri",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"8",
@@ -511,12 +534,15 @@ const productCard = [
 		tagline:"",
     name:"fish",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 
 	{
@@ -525,12 +551,15 @@ const productCard = [
 		tagline:"",
     name:"coke",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"10",
@@ -538,12 +567,15 @@ const productCard = [
 		tagline:"",
     name:"bed",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 
 	{
@@ -552,12 +584,15 @@ const productCard = [
 		tagline:"",
     name:"cap",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"12",
@@ -565,12 +600,15 @@ const productCard = [
 		tagline:"",
     name:"mouse",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 
 	{
@@ -579,12 +617,15 @@ const productCard = [
 		tagline:"",
     name:"hair",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"14",
@@ -592,12 +633,15 @@ const productCard = [
 		tagline:"",
     name:"yam",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"15",
@@ -605,12 +649,15 @@ const productCard = [
 		tagline:"",
     name:"turkey",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"16",
@@ -618,12 +665,15 @@ const productCard = [
 		tagline:"",
     name:"chicken",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"17",
@@ -631,12 +681,15 @@ const productCard = [
 		tagline:"",
     name:"techno",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"18",
@@ -644,12 +697,15 @@ const productCard = [
 		tagline:"",
     name:"infinix",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"19",
@@ -657,12 +713,15 @@ const productCard = [
 		tagline:"",
     name:"samsung",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"20",
@@ -670,12 +729,15 @@ const productCard = [
 		tagline:"",
     name:"hair",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"21",
@@ -683,12 +745,15 @@ const productCard = [
 		tagline:"",
     name:"phone",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"22",
@@ -696,12 +761,15 @@ const productCard = [
 		tagline:"",
     name:"phone",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"23",
@@ -709,12 +777,15 @@ const productCard = [
 		tagline:"",
     name:"phone",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"24",
@@ -722,12 +793,15 @@ const productCard = [
 		tagline:"",
     name:"phone",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"25",
@@ -735,12 +809,15 @@ const productCard = [
 		tagline:"",
     name:"phone",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"26",
@@ -748,12 +825,15 @@ const productCard = [
 		tagline:"",
     name:"phone",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 
 	{
@@ -762,12 +842,15 @@ const productCard = [
 		tagline:"",
     name:"phone",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"28",
@@ -775,12 +858,15 @@ const productCard = [
 		tagline:"",
     name:"phone",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 
 	{
@@ -789,12 +875,15 @@ const productCard = [
 		tagline:"",
     name:"phone",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 	{
 		key:"30",
@@ -802,12 +891,15 @@ const productCard = [
 		tagline:"",
     name:"phone",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
   {
 		key:"31",
@@ -815,12 +907,15 @@ const productCard = [
 		tagline:"",
     name:"chicken",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
   {
 		key:"32",
@@ -828,12 +923,15 @@ const productCard = [
 		tagline:"",
     name:"phone",
     profilePicture: '/profile.jpg',
-    username: 'username',
+    username: 'simplydigital',
     sellers: 300,
+    title: 'title of item',
+    slug: 'title-of-item-by-username',
     comment: 412,
     views: 900,
     rating: '🌟🌟🌟🌟',
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+    followers: 24,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 	},
 ];
 const products =[
