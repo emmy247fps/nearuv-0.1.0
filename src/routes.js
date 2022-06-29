@@ -16,7 +16,7 @@ const allPages = {
 
 const pubRoutes = [
   { path: "/", exact: true, name: "Home", element: allPages.general.Home },
-  // {path: "/:slug", name: "Product name", element: allPages.general.ProductListPage },
+  {path: "/product-store", name: "Product name", element: allPages.general.ProductListPage },
   {
     path: "/player-page",
     name: "Player page",

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import "../../../comp-files/app-style/_globalStoreProductInfo.scss";
-import "../../../comp-files/app-style/_sellersCanvas.scss";
+import "./app-style/_globalStoreProductInfoCanvas.scss";
+
 import {
   IoIosArrowDropdown,
   IoIosClose,
@@ -11,73 +11,69 @@ import {
 
 import {
   getGlobalStoreProductInfoBySlug,
-} from "../../../redux/actions";
-import { generatePublicUrl } from "../../../utilities-config/urlConfig";
-import { ContentLoading, DataLoading } from "../../../comp-files/hoc/Loading";
-import { globalSellersIcons } from "../../../comp-files/Icons";
+} from "../redux/actions";
+import { ContentLoading, DataLoading } from "./hoc/Loading";
+import { globalSellersIcons } from "./Icons";
+import { generatePublicUrl } from "../utilities-config/urlConfig";
 
-const GlobalStoreProductInfo = (props) => {
+const GlobalProductStoreInfoCanvas = ({show, hide, productInfo, setProductInfo}) => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.selectedGlobalItem);
-  const {productInfo, sellers} = data;
+  const { sellers} = data;
 
-  useEffect(()=>{
-    const {slug} = props.match.params;
-    dispatch(getGlobalStoreProductInfoBySlug(slug))
-  },[props, dispatch]);
+  // useEffect(()=>{
+  //   const {slug} = props.match.params;
+  //   dispatch(getGlobalStoreProductInfoBySlug(slug))
+  // },[props, dispatch]);
 
-
+console.log({show, hide, productInfo})
   return (
     <div className="content">
-    <div className="product__info__canvas open" > 
+    <div className="productInfoCanvas open" > 
       <div className="heading">
         <IoIosClose
-          className="seller__body__heading__icons__cancel"
-          // onClick={close}
+          className="cancelIcon"
+          onClick={()=>hide(!show)}
           size={40}
         />
       </div>
-      <div className="body">
         {/* globalImage  */}
-        <div className="swiper-container">
-          <div className="swiper-wrapper">
-            <div className="swiper-slider">
-              {productInfo.globalProductImage &&
-                productInfo.globalProductImage.length > 0 &&
+        <div className="swiperContainer">
+            <div className="swiperSlider">
+              { productInfo.globalProductImage.length > 0 &&
                 productInfo.globalProductImage.map((item, index) => (
                   <img
-                    src={generatePublicUrl(item.img)}
+                    // src={generatePublicUrl(item.img)}
+                    src={productInfo.globalProductImage.length > 0 ? item.img : '/logo.png'}
                     key={index}
                     alt={productInfo.productName}
                   />
                 ))}
             </div>
-          </div>
-        </div>
 
-        <div className="product__details__layout">
+        <div className="productDetailsLayout">
           {/* Here is the global product information */}
           {productInfo && (
-            <div className="product__info">
-              <h2 className="product__name">{productInfo.productName}</h2>
-              <div className="product__rating">
-                <span className="global">Global:</span>
-                <span className="global__number">4.7*</span>
-                <span className="global__likes">700 likes</span>
-                <span className="global__reviews">300 comments</span>
+            <div className="productInfo">
+              <h2 className="productName">{productInfo.productName}</h2>
+              <div className="productRating">
+                <span className="global">{productInfo.global}</span>
+                <span className="globalNumber">{productInfo.rating}</span>
+                <span className="globalLikes">{productInfo.likes}</span>
+                <span className="globalReviews">{productInfo.comments}</span>
               </div>
-              <div className="global__offer">
+              <div className="globalOffer">
                 <h4>Available offers</h4>
                 <span>
                   {productInfo.globalOffer &&
                   productInfo.globalOffer.length > 0 ? (
                     productInfo.globalOffer.map((item, index) => (
-                      <div className="global__offer__items" key={index}>
+                      <div className="globalOfferItems" key={index}>
                         {item.offer} {item.terms}
                       </div>
                     ))
                   ) : (
-                    <div className="global__offer__items"> No items yet </div>
+                    <div className="globalOfferItems"> No items yet </div>
                   )}
                 </span>
               </div>
@@ -91,7 +87,7 @@ const GlobalStoreProductInfo = (props) => {
     
     {/* Here is the global sellers container */}
     
-    <div className="sellers__canvas open">
+    {/* <div className="sellers__canvas open">
       <div className="contain">
         {sellers.loading ? (
           DataLoading("sellers")
@@ -174,10 +170,10 @@ const GlobalStoreProductInfo = (props) => {
           </>
         )}
       </div>
-    </div>
+    </div> */}
   
     </div>
   );
 };
 
-export default GlobalStoreProductInfo;
+export default GlobalProductStoreInfoCanvas;

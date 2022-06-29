@@ -6,6 +6,7 @@ const globalProductReducer = (state = initState.globalProduct, action) => {
         case globalProductConstant.GET_GLOBALPRODUCT_BY_SLUG_REQUEST: 
         return {
             ...state,
+            loading: true,
             message: action.payload.message
         }
 

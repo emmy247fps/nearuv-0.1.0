@@ -4,7 +4,7 @@ const mobileScreenPath = './small-screen-important'
 
 const  Home = lazy(()=> import('./all-screens/Home'));
 const  DesktopCategoryMenu = lazy(()=> import(`${largeScreenPath}/SubHeader`));
-const  ProductListPage = lazy(()=> import(`${largeScreenPath}/ProductListPage`));
+const  ProductListPage = lazy(()=> import('./all-screens/ProductListPage'));
 const  PlayerPage = lazy(()=> import(`${largeScreenPath}/PlayerPage`));
 const  Header = lazy(()=>import(`${largeScreenPath}/Header`));
 const  Sidebar = lazy(()=>import(`${largeScreenPath}/Sidebar`));
@@ -12,6 +12,7 @@ const  MobileCategoryMenu = lazy(()=> import(`${mobileScreenPath}/MobileCategory
 const  MobileFooterMenu = lazy(()=> import(`${mobileScreenPath}/MobileFooterMenu`));
 const  CommentLayout = lazy(()=> import(`./CommentLayout`));
 const  ItemDetailPage = lazy(()=> import('./all-screens/ItemDetailPage'));
+const GlobalStoreProductInfo = lazy(() => import ('../../comp-files/GlobalProductStoreInfoCanvas'))
 
 
 export {
@@ -24,5 +25,6 @@ export {
     ProductListPage,
     PlayerPage,
     CommentLayout,
-    ItemDetailPage
+    ItemDetailPage,
+    GlobalStoreProductInfo
 };

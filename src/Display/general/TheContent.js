@@ -14,7 +14,7 @@ const loading = (
 const TheContent = (props) => {
  const token = true
  const history = useLocation()
- console.log(history)
+//  console.log(history)
 
   let routes = () => {
     if (token ) {

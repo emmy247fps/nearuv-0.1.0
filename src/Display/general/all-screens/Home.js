@@ -68,7 +68,7 @@ const Home = () => {
                     <div className="numFollowers"><b>{item.followers}k</b></div>
                   </div>
                 </div>
-                <IoIosChatbubbles className="mobileIcon" size={23} onClick={()=>chatIconHandler(`/comment/${'fldkfj4fo4i'}/${item.name}`)} />
+                <IoIosChatbubbles className="mobileIcon" size={23} onClick={()=>chatIconHandler(`/comment`)} />
               </div>
               <div className="info">
                 <span className='overlayText'>{item.description}</span>

@@ -20,7 +20,7 @@ const initState = {
   globalProduct: {
     globalProducts: [],
     error: null,
-    loading: true,
+    loading: false,
     message: null,
   },
 

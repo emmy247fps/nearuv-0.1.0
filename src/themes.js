@@ -269,6 +269,9 @@ commentHeader{
 .textarea{
     background-color: ${props => props.theme.body};
 }
+.productInfoCanvas{
+    background-color: ${props => props.theme.body};
+}
 `;
 
 export { LightTheme, DarkTheme, OrangeTheme, GlobalStyles };

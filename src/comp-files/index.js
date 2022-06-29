@@ -3,7 +3,7 @@ import Services from "./Services";
 import Product from "./Product"; 
 import Badge from "./Badge";
 import VideoComponent from "./VideoComponent";
-import GlobalProductStoreInfoCanvas from "../Display/general/all-screens/GlobalStoreProductInfo";
+import GlobalProductStoreInfoCanvas from "./GlobalProductStoreInfoCanvas";
 
 export {
   SearchBar,

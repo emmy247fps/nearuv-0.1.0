@@ -1,6 +1,4 @@
 @import "../../base";
-
-
 .product__display {
     display: flex;
     justify-content: center;
@@ -44,4 +42,56 @@
             }
         }
     }
+}
+@media screen and (max-width: $breakpoint-small) {
+.product__display {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: .5rem;
+
+    
+
+    &__container{
+        width: 100%;
+        min-width: 14rem;
+        flex-grow: 1;
+        border-radius: .5rem;
+        padding: .3rem 0;
+        display: flex;
+        // background: red;
+
+        &__image{
+            width: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            padding: 15px;   
+            // background: red;
+            img {
+                width: 150px;
+                height: 150px;
+                object-fit: contain;
+            }
+        }
+
+        &__info {
+            // text-align: center;
+            justify-items: flex-start;
+            font-size: 12px;
+            @include line-clamp(3);
+            // margin-top: 38px;
+            padding: 0px 10px;
+            width: 50%;
+            display: flex;
+            // background: yellow;
+            &__wrap{
+                margin-top: 50px;  
+            }
+            .title {
+                margin: 5px 0;
+            }
+        }
+    }
+}
 }

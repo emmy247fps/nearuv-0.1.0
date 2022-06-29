@@ -939,25 +939,150 @@ const products =[
 		key:"1",
 		img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
 		tagline:"",
+    productSlug: '/comment',
+    globalProductImage: [
+      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+
+    
+    ],
+    productName: 'phone',
+global: 500,
+rating:4.7,
+likes: 700 ,
+comments: 300,
+globalOffer: [
+  {
+    offer: 4000,
+terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
+  }
+]
+
 
 	},
   {
 		key:"2",
 		img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
 		tagline:"",
+    productSlug: 'comment',
+    globalProductImage: [
+      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
 
+    
+    ],
+    productName: 'car',
+    global: 500,
+rating:4.7,
+likes: 700 ,
+comments: 300,
+globalOffer: [
+  {
+    offer: 4000,
+terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
+  }
+]
 	},
   {
 		key:"3",
 		img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
 		tagline:"",
-
+    productSlug: 'comment',
+    globalProductImage: [],
+    productName: 'food',
+    global: 500,
+rating:4.7,
+likes: 700 ,
+comments: 300,
+globalOffer: [
+  {
+    offer: 4000,
+terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
+  }
+]
 	},
   {
 		key:"4",
 		img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
 		tagline:"",
+    productSlug: 'comment',
+    globalProductImage: [],
+    productName: 'laptop',
+    global: 500,
+rating:4.7,
+likes: 700 ,
+comments: 300,
+globalOffer: [
+  {
+    offer: 4000,
+terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
+  }
+]
+	},
+  {
+		key:"2",
+		img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+		tagline:"",
+    productSlug: 'comment',
+    globalProductImage: [],
+    productName: 'car',
+    global: 500,
+rating:4.7,
+likes: 700 ,
+comments: 300,
+globalOffer: [
+  {
+    offer: 4000,
+terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
+  }
+]
+	},
+  {
+		key:"3",
+		img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+		tagline:"",
+    productSlug: 'comment',
+    globalProductImage: [],
+    productName: 'food',
+    global: 500,
+rating:4.7,
+likes: 700 ,
+comments: 300,
+globalOffer: [
+  {
+    offer: 4000,
+terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
+  }
+]
+	},
+  {
+		key:"4",
+		img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+		tagline:"",
+    productSlug: 'comment',
+    globalProductImage: [
+      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
 
+    
+    ],
+    productName: 'laptop',
+    global: 500,
+rating:4.7,
+likes: 700 ,
+comments: 300,
+globalOffer: [
+  {
+    offer: 4000,
+terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtrterm opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
+  }
+]
 	},
   // {
 	// 	key:"5",

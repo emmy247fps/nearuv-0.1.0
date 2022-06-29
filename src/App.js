@@ -23,9 +23,9 @@ const App = (props) => {
     import("./Display/general/all-screens/ProductListPage")
   );
 
-  const GlobalStoreItem = React.lazy(() =>
-    import("./Display/general/all-screens/GlobalStoreProductInfo")
-  );
+  // const GlobalStoreItem = React.lazy(() =>
+  //   import("./Display/general/all-screens/GlobalStoreProductInfoCanvas")
+  // );
 
   // useEffect(() => {
   //   dispatch(getAllCategory());
