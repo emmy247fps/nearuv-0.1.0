@@ -35,6 +35,7 @@ const LightTheme = {
   badge: color.blackSecondary,
   hoverColor: color.redPrimary,
   sidebarBackground: color.whiteSecondary,
+  canvasHeaderColor: color.whiteSecondary,
   hoverBackground: color.whiteSecondary,
   icontTransition: color.iconTransitionWhitePrimary,
   productCardShadow: color.whiteBoxShadowSecondary,
@@ -55,6 +56,7 @@ const OrangeTheme =  {
     badge: color.whiteSecondary,
     hoverColor: color.redPrimary,
     sidebarBackground: color.orangeSecondary,
+    canvasHeaderColor: color.orangeSecondary,
     hoverBackground: color.orangeSecondary,
     iconTransition: color.iconTransitionBlackPrimary,
     productCardShadow: color.whitePrimary,
@@ -77,9 +79,10 @@ const DarkTheme = {
   badge: color.whiteSecondary,
   hoverColor: color.redPrimary,
   sidebarBackground: color.blackSecondary,
+  canvasHeaderColor: color.blackSecondary,
   hoverBackground: color.blackSecondary,
   iconTransition: color.iconTransitionBlackPrimary,
-  productCardShadow: color.whiteBoxShadowSecondary,
+  productCardShadow: color.blackSecondary,
   topMenuBlockedContent: color.whiteGrayBlockedContent,
 
 
@@ -89,23 +92,23 @@ const DarkTheme = {
 const GlobalStyles = createGlobalStyle`
 
 body {
-    background-color: ${(props) => props.theme.body};
+    background: ${(props) => props.theme.body};
     color: ${(props) => props.theme.fontColor};
 }
 
 .header {
-    background-color: ${(props) => props.theme.headerBackground}
+    background: ${(props) => props.theme.headerBackground}
 }
 
 .header__icons, .video__canvas__left__content__video__icons, .sidebar li, .header__icons__environment, .header__left__menu{
     color: ${props => props.theme.iconsColor}
 }
 .header__left__logo{
-    background-color: ${(props) => props.theme.iconsColor}
+    background: ${(props) => props.theme.iconsColor}
 }
 
 .search__bar {
-    background-color: ${(props) => props.theme.searchBarBackground};
+    background: ${(props) => props.theme.searchBarBackground};
     border-color: ${props => props.theme.searchBarBicons__environmentrderColor}
 }
 
@@ -118,12 +121,12 @@ body {
 }
 
 .footer {
-    background-color: ${props => props.theme.body};
+    background: ${props => props.theme.body};
     color: ${props => props.theme.fontColor}
 }
 
 .badge, .video__top span {
-    background-color: ${props => props.theme.badgeBackground};
+    background: ${props => props.theme.badgeBackground};
     color: ${props => props.theme.badgeFontColor};
 }
 
@@ -138,7 +141,7 @@ body {
 }
 
 .footer__icons__basket {
-    background-color: ${props => props.theme.badge};
+    background: ${props => props.theme.badge};
     color: ${props => props.theme.badgeFontColor}
 }
 
@@ -153,11 +156,11 @@ body {
     }
 
 .sidebar, .left__side__nav {
-    background-color: ${props => props.theme.sidebarBackground};
+    background: ${props => props.theme.sidebarBackground};
     border-left: 5px solid ${props => props.theme.body};
     
 }
- .product__display__container {
+ .productDisplayContainer {
      box-shadow: 0px 0px 8px 1px ${props => props.theme.productCardShadow}
  }
 
@@ -167,7 +170,7 @@ body {
 }
 
 .sidebar li:hover, .active {
-    background-color: ${props => props.theme.hoverBackground};
+    background: ${props => props.theme.hoverBackground};
     border-right: 4px solid  ${props => props.theme.sidebarBackground};
     border-radius: 0 18px;
 }
@@ -184,7 +187,7 @@ body {
 
 .sidebar::-webkit-scrollbar, .video__canvas__left__content::-webkit-scrollbar, .sellers__body::-webkit-scrollbar {
     width: 6px;
-    background-color: ${props => props.theme.sidebarBackground};
+    background: ${props => props.theme.sidebarBackground};
 }
 
 .sidebar::-webkit-scrollbar:hover, .video__canvas__left__content::-webkit-scrollbar:hover, .sellers__body::-webkit-scrollbar:hover {
@@ -194,7 +197,7 @@ body {
 }
 
 .sidemenu__content .open__sidemenu {
-    background-color: ${props => props.theme.topMenuBlockedContent}
+    background: ${props => props.theme.topMenuBlockedContent}
 }
 
 a {
@@ -202,18 +205,18 @@ a {
 }
 
 .sidebar::-webkit-scrollbar-thumb, .video__canvas__left__content::-webkit-scrollbar-thumb, .sellers__body::-webkit-scrollbar-thumb {
-    background-color: ${props => props.theme.fontColor};
+    background: ${props => props.theme.fontColor};
     border-radius: 6px
 }
 
 
 
-.top__trending__item__image {
-    background-color: ${props => props.theme.fontColor};
+.top__trending__itemImage {
+    background: ${props => props.theme.fontColor};
 }
 
 .video__canvas {
-    background-color: ${props => props.theme.body}
+    background: ${props => props.theme.body}
 }
 
 .video__title {
@@ -226,13 +229,13 @@ a {
     box-shadow: 2px 6px 1em ${props => props.theme.sidebarBackground}
 }
 
-.sellers__canvas.open {
+.sellersCanvas.open {
     color:  ${props => props.theme.fontColor};
     background: ${props => props.theme.sidebarBackground};
     box-shadow: 2px 6px 1em ${props => props.theme.sidebarBackground};
 }
 
-.sellers__canvas .contain__content {
+.sellersCanvas .contain__content {
     background: ${props => props.theme.sellersCanvasItems}
 }
 
@@ -254,23 +257,29 @@ a {
     color: ${props => props.theme.iconsColor}
 }
 .commentNavbar{
-    background-color: ${props => props.theme.fontColor};
+    background: ${props => props.theme.fontColor};
     color: ${props => props.theme.fontColor}
 }
 commentHeader{
-    background-color: ${props => props.theme.body};
+    background: ${props => props.theme.body};
 }
 .subHeader{
-    background-color: ${props => props.theme.sidebarBackground};
+    background: ${props => props.theme.sidebarBackground};
 }
 .SubmitIcon{
-    background-color: ${props => props.theme.body};
+    background: ${props => props.theme.body};
 }
 .textarea{
-    background-color: ${props => props.theme.body};
+    background: ${props => props.theme.body};
 }
 .productInfoCanvas{
-    background-color: ${props => props.theme.body};
+    background: ${props => props.theme.body};
+}
+
+
+
+.productInfoCanvas .heading{
+    background: ${props => props.theme.canvasHeaderColor};
 }
 `;
 

@@ -1,14 +1,14 @@
 @import "../../base";
-.product__display {
+.productDisplay {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: .5rem;
+    padding: .5rem 3rem;
 
     
 
-    &__container{
+    &Container{
         width: 23%;
         min-width: 14rem;
         flex-grow: 1;
@@ -17,7 +17,7 @@
     
 
 
-        &__image{
+        &Image{
             width: 150px;
             height: 150px;
             overflow: hidden;
@@ -32,19 +32,20 @@
             }
         }
 
-        &__info {
+        &Info {
             text-align: center;
             font-size: 12px;
             @include line-clamp(3);
 
             .title {
-                margin: 5px 0;
+                margin: 5px 16px;
+                @include line-clamp(1);
             }
         }
     }
 }
 @media screen and (max-width: $breakpoint-small) {
-.product__display {
+.productDisplay {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -53,16 +54,15 @@
 
     
 
-    &__container{
+    &Container{
         width: 100%;
         min-width: 14rem;
         flex-grow: 1;
         border-radius: .5rem;
-        padding: .3rem 0;
         display: flex;
         // background: red;
 
-        &__image{
+        &Image{
             width: 50%;
             overflow: hidden;
             margin: 0 auto;
@@ -73,18 +73,18 @@
                 height: 150px;
                 object-fit: contain;
             }
-        }
+        };
 
-        &__info {
-            // text-align: center;
+        &Info {
+            border-radius: 0 0.5rem 0.5rem 0;
             justify-items: flex-start;
             font-size: 12px;
             @include line-clamp(3);
-            // margin-top: 38px;
             padding: 0px 10px;
             width: 50%;
             display: flex;
-            // background: yellow;
+            background: rgb(9, 9, 0);  
+            color: white;                                                                                                                                                                                                                               
             &__wrap{
                 margin-top: 50px;  
             }

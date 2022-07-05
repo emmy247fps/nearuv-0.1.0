@@ -6,7 +6,7 @@ const SubHeader = () => {
         <div className="trending__bar">
       {TopProducts.images.map((value, i) => (
         <span key={i}>
-        <img src= {value.url} alt= {value.name} className = "top__trending__item__image"/>
+        <img src= {value.url} alt= {value.name} className = "top__trending__itemImage"/>
         <span>{value.name}</span>
         </span>
       ))}

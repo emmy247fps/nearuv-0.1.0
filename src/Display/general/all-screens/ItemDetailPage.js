@@ -58,7 +58,7 @@ const ItemDetailPage = (props) => {
         <div className="product__details__layout">
           {/* Here is the global product information */}
           {productInfo && (
-            <div className="product__info">
+            <div className="productInfo">
               <h2 className="product__name">{productInfo.productName}</h2>
               <div className="product__rating">
                 <span className="global">Global:</span>
@@ -91,7 +91,7 @@ const ItemDetailPage = (props) => {
     
     {/* Here is the global sellers container */}
     
-    <div className="sellers__canvas open">
+    <div className="sellersCanvas open">
       <div className="contain">
         {sellers.loading ? (
           DataLoading("sellers")
@@ -132,9 +132,9 @@ const ItemDetailPage = (props) => {
                     alt={item.sellerId.username}
                   />
                   <span>{item.sellerId.username}</span>
-                  <span className="contain__content__profile__information">
+                  <span className="contain__content__profileInformation">
                     <IoIosInformationCircleOutline
-                      className="icons icons__information"
+                      className="icons iconsInformation"
                       size={20}
                     />
                   </span>

@@ -1,72 +1,160 @@
-@import "../../base";
-// .status{
-//   display: none;
-// }
-.productInfoCanvas {
-  // background: red;
-    position: fixed;
-    width: 64%;
-    transform: translateX(-100%);
-    transition: transform 0.4s ease-out;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    overflow: scroll;
-    z-index: 4;
+// @import "../../base";
+// // .status{
+// //   display: none;
+// // }
+// .productInfoCanvas {
+//   // background: red;
+//     position: fixed;
+//     width: 50%;
+//     transform: translateX(-100%);
+//     transition: transform 0.4s ease-out;
+//     height: 100vh;
+//     position: fixed;
+//     top: 0;
+//     overflow: scroll;
+//     z-index: 4;
   
-    &.open {
-      transform: translateX(0);
-      transition: transform 0.9s ease-out;
-    }
-}
+//     &.open {
+//       width: 100%;
+//       transform: translateX(0);
+//       transition: transform 0.9s ease-out;
+//       box-shadow: -5px 0px 9px 0px;
+//     }
+//     .heading{
+//       box-shadow: 0px 0px 6px -6px;
+//       position: sticky;
+//       top: 0;
+//       z-index: 2;
+//       width: 100%;
+//       // background: black;
+//     }
+// }
+// .productInfoCanvas::-webkit-scrollbar{
+//   width: 30px !important
+// }
+// .productRating{
+//   display: flex;
+// }
+// .sellersLink{
+//   margin-left: auto;
+//   color: green;
+// }
 
-.swiper-container {
-  width: 100%;
-  padding-top: 90px;
-  // padding-bottom:
-}
+// .swiperContainer {
+//   width: 100%;
+//   padding: 1rem;
+//   // padding
+// }
+// .swiperSlider{
+// // width: 63vw;
+// // height: 60vmin;
+// display: flex;
+// gap: 5px;
+// }
+// .Offer{
+//   gap: 5px;
+// }
+// .swiperSlider img{
+// height: 300px;
+// flex: 1;
+// object-fit: cover;
+// overflow: hidden;
+// cursor: pointer;
+// border-radius: 10px;
+// transition: all 0.3s;
+// }
+// .swiperSlider img:hover{
+//   flex: 4;
+// }
+// .productDetailsLayout{
+//   padding-top: 1rem;
+// }
+// .globalOffer{
+//   // width: 45%;
+//   // @include line-clamp(3);
+//   padding: 2px;
+//     width: 50%;
+//     margin: auto;
+// }
+// .glob{
+//   padding: 2px;
+//     width: 50%;
+//     margin: auto;
+// }
+// .globalInfo{
+//   display: block;
+//   // gap: 10px;
+// }
+// // .box{
+// //   animation: animate 2s infinite linear;
+// //   background: red;
+// // }
+// .offerListIcon{
+//  display: flex;
+//  padding-bottom: 5px;
+// }
+// .iconImg{
+//   width: 20px;
+//   height: 20px;
+//   padding-right: 5px;
+//   margin-left: -21px;
+// }
+// .listName{
+//   margin-bottom: 5px;
+// }
+// .listOffer{
+//   list-style-type: none;
+  
+// }
 
-@media screen and (max-width: $breakpoint-small) {
-.productInfoCanvas {
-  position: fixed;
-      height: 100%;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      // height: 80%;
-      // border-radius: 15px;
-      z-index: 4;
-    &.open .content{
-      margin-bottom: 0px;
-  opacity: 1;
-      transition: all .25s ease;
-    }
-    .heading{
-      box-shadow: 1px -7px 2px 7px;
-    }
-}
-.swiperContainer {
-  width: 100%;
-  user-select: none;
-}
-.swiperSlider{
-    top: 45px;
-    top: 0;
-    padding: .5rem;
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: .3rem;
-    overflow-x: auto; 
-    user-select: none;
-}
-.swiperSlider img{
-  position: relative;
-  width: 200px;
-  height: 150px;
-}
-.productDetailsLayout{
-  padding: 34px 0px;
-  margin: 10px;
-}
-}
+// @media screen and (max-width: $breakpoint-small) {
+// .productInfoCanvas {
+//   position: fixed;
+//       height: 100%;
+//       left: 0;
+//       right: 0;
+//       bottom: 0;
+//       width: 100%;
+//       // height: 80%;
+//       // border-radius: 15px;
+//       z-index: 4;
+   
+//     &.open .content{
+
+//       margin-bottom: 0px;
+//   opacity: 1;
+//       transition: all .25s ease;
+//     }
+//     .heading{
+//       box-shadow: 0px 0px 6px -6px;
+//       position: sticky;
+//       top: 0;
+//       z-index: 2;
+//       width: 100%;
+//       // background: black;
+//     }
+// }
+// .swiperContainer {
+//   width: 100%;
+//   user-select: none;
+// }
+// .swiperSlider{
+//     top: 45px;
+//     top: 0;
+//     padding: .5rem;
+//     display: grid;
+//     grid-auto-flow: column;
+//     column-gap: .3rem;
+//     overflow-x: auto; 
+//     user-select: none;
+// }
+// .swiperSlider img{
+//   position: relative;
+//   width: 200px;
+//   height: 150px;
+// }
+// .productDetailsLayout{
+//   padding: 34px 0px;
+//   margin: 10px;
+// }
+// }

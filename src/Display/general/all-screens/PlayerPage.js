@@ -65,8 +65,8 @@ const PlayerPage = (props) => {
             <span>{videoDetails.profileName}</span>
           </div>
           <VideoComponent
-            classNameContainer="video__canvas__left__content__video__container"
-            classNameVideoTop="video__canvas__left__content__video__container__video"
+            classNameContainer="video__canvas__left__content__videoContainer"
+            classNameVideoTop="video__canvas__left__content__videoContainer__video"
             videoSource={videoDetails.content}
             alt={videoDetails.contentTitle}
           >

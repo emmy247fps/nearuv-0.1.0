@@ -11,6 +11,7 @@ import Status from "../../../comp-files/components/Status";
 // import CommentPage from "../../private/small-screen-important/CommentPage";
 import { TheAvatar } from "../../../comp-files/components";
 import { IoIosChatbubbles, IoIosPeople, } from "react-icons/io";
+import { ItemsTemplate } from "../../../comp-files";
 
 
 
@@ -54,7 +55,13 @@ const Home = () => {
   return (
     <>
       <Status className='status' />
-      <div className='homeContainer' >
+
+      <ItemsTemplate 
+       data = {productCard}
+       type = 'item'
+       mobileIconClick = {()=>chatIconHandler(`/comment`)}
+        />
+      {/* <div className='homeContainer' >
         {productCard?.map((item, i) => (
           <div className="homeContainerItems" key={i} onClick={()=>itemClickedHandler(`/description/${item.slug}/${item.name}`)}>
             <img alt={item.username} src={item.img} style={{ width: "100%" }} className="homeContainerItemsImage" />
@@ -77,7 +84,7 @@ const Home = () => {
           </div>
         ))
         }
-      </div>
+      </div> */}
 
       {/* <SlidingInfo
         clickHandler={() => clickHandler()}

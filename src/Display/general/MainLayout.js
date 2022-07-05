@@ -44,7 +44,7 @@ const MainLayout = (props) => {
         handleToggleMobileMenu={handleToggleMobileMenu}
       />
       <Sidebar activeElement={activeElement} handleNavItem={handleNavItem} />
-      <div className="layoutOne__container">
+      <div className="layoutOneContainer">
        <TheContent />
       </div>
       

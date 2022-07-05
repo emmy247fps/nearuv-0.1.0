@@ -1,6 +1,6 @@
 @import "../../base";
 
-.sellers__canvas {
+.sellersCanvas {
   display: flex;
   width: 36%;
   transform: translateX(150%);
@@ -55,7 +55,7 @@
         span {
           margin: 0 5px
         }
-        &__information {
+        &Information {
           position: absolute;
           right: 0;
 
@@ -132,7 +132,7 @@
 
 
 @media screen and (max-width: $breakpoint-small) {
-  .sellers__canvas {
+  .sellersCanvas {
     display: block;
     width: 70%
   }

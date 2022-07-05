@@ -36,6 +36,8 @@
         font-weight: 200;
         // padding: 0.7rem;
         border-radius: 0px 10px 10px 0px;
+        height: 3rem;
+
       }
       .textarea{
         width: 80%;
@@ -43,14 +45,17 @@
           font-weight: 200;
           padding: 0.3rem;
           border-radius: 10px 0px 0px 10px;
+        height: 3rem;
+
           &:focus {
             outline: none;
           }
       }
       .textarea .SubmitIcon{
-        position: absolute;
-        right: 8px;
-        top: 8px;
+        // position: absolute;
+        // right: 8px;
+        // // top: 8px;
+align-items: center;
       }
     }
     &Body{

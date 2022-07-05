@@ -13,7 +13,7 @@ const  MobileFooterMenu = lazy(()=> import(`${mobileScreenPath}/MobileFooterMenu
 const  CommentLayout = lazy(()=> import(`./CommentLayout`));
 const  ItemDetailPage = lazy(()=> import('./all-screens/ItemDetailPage'));
 const GlobalStoreProductInfo = lazy(() => import ('../../comp-files/GlobalProductStoreInfoCanvas'))
-
+const  ProductDetailsPage = lazy(()=> import('./all-screens/ProductDetailsPage'));
 
 export {
     Home,
@@ -26,5 +26,6 @@ export {
     PlayerPage,
     CommentLayout,
     ItemDetailPage,
-    GlobalStoreProductInfo
+    GlobalStoreProductInfo,
+    ProductDetailsPage
 };

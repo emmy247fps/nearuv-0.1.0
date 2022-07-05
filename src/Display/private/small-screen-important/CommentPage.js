@@ -45,7 +45,9 @@ rating: '56k',
             <input className='textarea' type="text" onChange={(e) => setAddedComment(e.target.value)} 
             placeholder="Add comments" 
             onFocus={() => console.log('test')} />
-            <IoMdSend className='SubmitIcon' size={40} />
+            <nav className='SubmitIcon'>
+            <IoMdSend className='sendIcon' size={30} />
+            </nav>
           </form>
         </div>
         <div className='commentBody' ref= {commentRef}>

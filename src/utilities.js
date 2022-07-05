@@ -409,9 +409,6 @@ const productCard = [
 	{
 		key:"1",
 		img:"https://i.pinimg.com/236x/b0/b1/fe/b0b1fef4957026f5c3f75084af89ce8d.jpg",
-    title: 'title of item',
-    slug: 'title-of-item-by-username',
-
 		tagline:"",
      name:"phone",
      type: 'picture',
@@ -948,7 +945,8 @@ const products =[
 
     
     ],
-    productName: 'phone',
+    sellers: 2,
+    productName: 'Amazon Basics 8 Pack AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack',
 global: 500,
 rating:4.7,
 likes: 700 ,
@@ -975,7 +973,8 @@ terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
 
     
     ],
-    productName: 'car',
+    sellers: 2,
+    productName: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr',
     global: 500,
 rating:4.7,
 likes: 700 ,
@@ -995,6 +994,7 @@ terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
     globalProductImage: [],
     productName: 'food',
     global: 500,
+    sellers: 2,
 rating:4.7,
 likes: 700 ,
 comments: 300,
@@ -1031,6 +1031,7 @@ terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
     globalProductImage: [],
     productName: 'car',
     global: 500,
+    sellers: 2,
 rating:4.7,
 likes: 700 ,
 comments: 300,
@@ -1072,6 +1073,7 @@ terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
 
     
     ],
+    sellers: 2,
     productName: 'laptop',
     global: 500,
 rating:4.7,
