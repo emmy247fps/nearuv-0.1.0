@@ -73,12 +73,12 @@ transition: all 0.3s;
   // width: 45%;
   // @include line-clamp(3);
   padding: 2px;
-    width: 50%;
+    // width: 50%;
     margin: auto;
 }
 .glob{
   padding: 2px;
-    width: 50%;
+    // width: 50%;
     margin: auto;
 }
 .globalInfo{
@@ -105,6 +105,20 @@ transition: all 0.3s;
 .listOffer{
   list-style-type: none;
   
+}
+.globalInfo{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.Navigation{
+  width: 33%;
+}
+.globalinfoWrap{
+  width: 33%;
+}
+.sellersList{
+  width: 33%;
 }
 
 @media screen and (max-width: $breakpoint-small) {

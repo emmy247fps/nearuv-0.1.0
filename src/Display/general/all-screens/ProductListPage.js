@@ -15,7 +15,8 @@ import { generatePublicUrl } from "../../../utilities-config/urlConfig";
 import SellersCanvas from "../../../comp-files/SellersCanvas";
 import MainLayout from "../MainLayout";
 import { Link,useParams } from "react-router-dom";
-import ProductDetailsPage from "./ProductDetailsPage";
+// import ProductDetailsPage from "./ProductDetailsPage";
+import BlockTemplate2 from "../../../comp-files/templates/BlockTemplate2";
 
 const ProductListPage = (props) => {
   const dispatch = useDispatch();
@@ -33,12 +34,12 @@ const ProductListPage = (props) => {
     dispatch(getProductsBySlug(slug));
   }, [dispatch, props ]);
 
-  console.log({mobileScreen, screenSize})
+  // console.log({mobileScreen, screenSize})
 
   useCallback(()=>{
     if(screenSize){
       setMobileScreen(true)
-      console.log({mobileScreen, screenSize})
+      // console.log({mobileScreen, screenSize})
     }
   },[setMobileScreen,  screenSize, mobileScreen])
 
@@ -56,16 +57,25 @@ const ProductListPage = (props) => {
       setCanvas(false)
     }
   }
-
+  // const ProductLinkHandler =(link)=>{
+  //   navigate(link)
+  // }
+// console.log(ProductLinkHandler)
   return (
     <>
-      {canvas && <ProductDetailsPage show={canvas} hide={setCanvas} productInfo={productInfo} setProductInfo={setProductInfo} /> }
+    <BlockTemplate2
+    data = {selector.product}
+    itemAction = {getProductInfoHandler}
+           closeHandler = {closeHandler}
+          //  ProductLinkHandler = {()=>ProductLinkHandler(`/comment`)}
+    />
+      {/* {canvas && <ProductDetailsPage show={canvas} hide={setCanvas} productInfo={productInfo} setProductInfo={setProductInfo} /> } */}
       {/* <SellersCanvas show={canvas} hide={setCanvas} /> */}
-      <BlockTemplate
+      {/* <BlockTemplate
         data = {selector.product}
         itemAction = {getProductInfoHandler}
                closeHandler = {closeHandler}
-         />
+         /> */}
 
 
       {/* <div className="productDisplay" onClick={closeHandler}>

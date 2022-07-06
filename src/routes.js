@@ -16,27 +16,30 @@ const allPages = {
 };
 
 const pubRoutes = [
-  { path: "/", exact: true, name: "Home", element: allPages.general.Home },
+  { path: "/",  name: "Home", element: allPages.general.Home },
   {path: "/product-store", name: "Product name", element: allPages.general.ProductListPage },
   {
     path: "/player-page",
-    name: "Player page",
+    name: "Player page", 
+
     element: allPages.general.PlayerPage,
   },
   {
     path: "/item-detail-page",
     name: "  Item-page",
+
     element: allPages.general.ItemDetailPage,
   },
   {
-    path: "/product-details-page",
+    path: "/p",
     name: "  product-page",
+   
     element: allPages.general.ProductDetailsPage,
   },
 ];
 
 const privRoutes = [
-  { path: "/", exact: true, name: "Home", element: allPages.general.Home },
+  { path: "/", name: "Home", element: allPages.general.Home },
   {path: "/:slug", name: "Product name", element: allPages.general.ProductListPage },
   {
     path: "/player-page",

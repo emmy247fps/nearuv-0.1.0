@@ -12,7 +12,7 @@ const loading = (
 )
 
 const TheContent = (props) => {
- const token = true
+ const token = false
  const history = useLocation()
 //  console.log(history)
 
@@ -30,7 +30,7 @@ const TheContent = (props) => {
                 <Route
                   key={i}
                   path={route.path}
-                  exact={route.exact}
+                  // exact={route.exact}
                   name={route.name}
                   element={<route.element />}
                 />
