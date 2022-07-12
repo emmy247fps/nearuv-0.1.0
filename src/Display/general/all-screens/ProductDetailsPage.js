@@ -3,75 +3,61 @@ import { useDispatch, useSelector } from "react-redux";
 import "../../../comp-files/app-style/__productDetailsPage.scss";
 import { IoIosClose, } from "react-icons/io";
 import { DataLoading } from "../../../comp-files/hoc/Loading";
+import { products } from "../../../utilities";
 
 // import { Header } from "../Display/general";
 
 const ProductDetailsPage = () => {
-    const productInfo = {
-        key: "2",
-        img: "https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-        tagline: "",
-        productSlug: 'comment',
-        globalProductImage: [
-            { img: "https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" },
-            { img: "https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" },
-            { img: "https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" },
-            { img: "https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" },
-        ],
-        sellers: 2,
-        productName: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr',
-        global: 500,
-        rating: 4.7,
-        likes: 700,
-        comments: 300,
-        globalOffer: [
-            {
-                offer: 4000,
-                terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
-            }
-        ]
-    }
+    const product = products[0]
 
     return (
-        <div className="content">
-            <div className="productInfoCanvas open" >
 
-                {/* globalImage  */}
-                <div className="swiperContainer">
-                    <div className="swiperSlider">
-                        {productInfo?.globalProductImage?.length > 0 &&
-                            productInfo?.globalProductImage?.map((item, index) => (
-                                <img
-                                    // src={generatePublicUrl(item.img)}
-                                    src={productInfo.globalProductImage?.length > 0 ? item.img : '/logo.png'}
-                                    key={index}
-                                    alt={productInfo.productName}
-                                />
+        <div className="productDetailsLayout">
+            <div className="swiperSlider">
+                {product?.globalProductImage?.length > 0 &&
+                    product?.globalProductImage?.map((item, index) => (
+                        <img
+                            // src={generatePublicUrl(item.img)}
+                            src={product.globalProductImage?.length > 0 ? item.img : '/logo.png'}
+                            key={index}
+                            alt={product.productName}
+                        />
 
-                            ))}
-                    </div>
+                    ))}
+            </div>
 
-                    <div className="productDetailsLayout">
-                        {/* Here is the global product information */}
-                        {productInfo && (
-                            <div className="productInfo">
-                                <h2 className="productName">{productInfo.productName}</h2>
-                                <div className="productRating">
-                                    <div>
-                                        <span className="global">{productInfo.global}</span>
-                                        <span className="globalNumber">{productInfo.rating}</span>
-                                        <span className="globalLikes">{productInfo.likes}</span>
-                                        <span className="globalReviews">{productInfo.comments}</span>
-                                    </div>
-                                    <div className="sellersLink">
-                                        <a href="" >views sellers</a>
-                                    </div>
+            <div className="content">
+                {/* Here is the global product information */}
+                {product && (
+                    <div className="productInfoContainer">
+
+                        <div className="productInfoRow">
+                            {/* column 1 */}
+                            <div className="column1">
+                                <div className="navigationHeader">
+                                    <h2>Navigation</h2>
                                 </div>
-                                <div className="globalInfo">
-                                    <div className="Navigation">
-                                        <h2>Navigation</h2>
-                                    </div>
-                                    <div className="globalinfoWrap">
+                                <nav className="navigationList">
+                                        <a href="#sec1" className="productNav">Product details</a>
+                                        <a href="#sec2">Specifications</a>
+                                        <a href="#sec3"> Feedback</a>
+                                        <a href="#sec4">Customers view</a>
+                                 </nav>
+                            </div>
+                            {/* column 2 */}
+                            <div className="column2">
+                            <section id="sec1">
+                                <h2 className="productName">{product.productName}</h2>
+                                
+                                     <h2>Product details</h2>
+                                     <li>IN THE BOX: 8-pack of 1.5 volt AA alkaline batteries for reliable performance across a wide range of devices</li>
+                                            <li>DEVICE COMPATIBLE: Ideal battery for game controllers, toys, flashlights, digital cameras, clocks, and more</li>
+                                            <li>DESIGNED TO LAST: 10-year leak-free shelf life; store for emergencies or use right away</li>
+                                            <li>EASY USE & STORAGE: Ships in Certified Frustration-Free Packaging; easy to open and store extras for later use</li>
+                                            <li>SINGLE USE: These batteries are NOT rechargeable; for rechargeable options, check out Amazon Basics rechargeable batteries</li>
+                               </section>
+                               <section id="sec2">
+
                                     <div className="globalOffer">
                                         <h2 className="listName">Available offers</h2>
                                         <div className="Offer">
@@ -107,29 +93,34 @@ const ProductDetailsPage = () => {
                                             </span>
                                         </div>
                                     </div>
-                                    <div className="glob">
-                                        <h2> About product</h2>
-                                        <div>
-                                            <ul>
-                                                <li>IN THE BOX: 8-pack of 1.5 volt AA alkaline batteries for reliable performance across a wide range of devices</li>
-                                                <li>DEVICE COMPATIBLE: Ideal battery for game controllers, toys, flashlights, digital cameras, clocks, and more</li>
-                                                <li>DESIGNED TO LAST: 10-year leak-free shelf life; store for emergencies or use right away</li>
-                                                <li>EASY USE & STORAGE: Ships in Certified Frustration-Free Packaging; easy to open and store extras for later use</li>
-                                                <li>SINGLE USE: These batteries are NOT rechargeable; for rechargeable options, check out Amazon Basics rechargeable batteries</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div className="sellersList">
-                                        <h2>sellersList</h2>
-                                    </div>
-                                </div>
+                               </section>
+                               <section id="sec3">
+                                     <h2>Verified Customer Feedback</h2>
+                                     <li>IN THE BOX: 8-pack of 1.5 volt AA alkaline batteries for reliable performance across a wide range of devices</li>
+                                            <li>DEVICE COMPATIBLE: Ideal battery for game controllers, toys, flashlights, digital cameras, clocks, and more</li>
+                                            <li>DESIGNED TO LAST: 10-year leak-free shelf life; store for emergencies or use right away</li>
+                                            <li>EASY USE & STORAGE: Ships in Certified Frustration-Free Packaging; easy to open and store extras for later use</li>
+                                            <li>SINGLE USE: These batteries are NOT rechargeable; for rechargeable options, check out Amazon Basics rechargeable batteries</li>
+                                            <li>EASY USE & STORAGE: Ships in Certified Frustration-Free Packaging; easy to open and store extras for later use</li>
+                                            <li>SINGLE USE: These batteries are NOT rechargeable; for rechargeable options, check out Amazon Basics rechargeable batteries</li>
+                                            <li>EASY USE & STORAGE: Ships in Certified Frustration-Free Packaging; easy to open and store extras for later use</li>
+                                            <li>SINGLE USE: These batteries are NOT rechargeable; for rechargeable options, check out Amazon Basics rechargeable batteries</li>                               </section>
+                               <section id="sec4">
+                                     <h2>Customers who viewed this also viewed</h2>
+                                     <li>IN THE BOX: 8-pack of 1.5 volt AA alkaline batteries for reliable performance across a wide range of devices</li>
+                                            <li>DEVICE COMPATIBLE: Ideal battery for game controllers, toys, flashlights, digital cameras, clocks, and more</li>
+                                            <li>DESIGNED TO LAST: 10-year leak-free shelf life; store for emergencies or use right away</li>
+                                            <li>EASY USE & STORAGE: Ships in Certified Frustration-Free Packaging; easy to open and store extras for later use</li>
+                                            <li>SINGLE USE: These batteries are NOT rechargeable; for rechargeable options, check out Amazon Basics rechargeable batteries</li>
+                               </section>
                             </div>
-                        )}
-                    </div>
-                </div>
-            </div>
 
+                            {/* column 3 */}
+                           
+                        </div>
+                    </div>
+                )}
+            </div>
         </div>
     );
 }

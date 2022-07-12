@@ -942,10 +942,31 @@ const products =[
       {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
       {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
       {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
-
-    
     ],
-    sellers: 2,
+    sellers: [
+      {
+        sellerId: 'lksdfjsdlkjdsfdfskl', 
+          productImages: [
+            {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+            {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+            {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+            {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
+          ],
+          sellerName: 5,
+          sellerImage: 6,
+          productOtherName: "",
+          sellingPrice: 6,
+          aboutProduct: "",
+          logisticsInfo: "",
+          answeredQuestion: [],
+          sellerRating: 100,
+          productDescription: '',
+          varities: [],
+          productInfo: [],
+          importantNote: '',
+          fbt: []
+      },
+    ],
     productName: 'Amazon Basics 8 Pack AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack',
 global: 500,
 rating:4.7,
@@ -956,9 +977,10 @@ globalOffer: [
     offer: 4000,
 terms: 'term opzdfg[o k[pzdfog[ pokzd f[kz [kpozr[ gkpozgkpo zds[ rgtr '
   }
-]
+],
+relatedItem: [],
 
-
+stockKeeping: 60,
 	},
   {
 		key:"2",
