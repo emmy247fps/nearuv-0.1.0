@@ -7,7 +7,7 @@ const color = {
   blackPrimary: "#080808",
   blackSecondary: "#16181b",
   whitePrimary: " #ffffff",
-  whiteSecondary: "#d4d4d4",
+  whiteSecondary: "#f3f3f3b0",
   greyBorder: "#4c4c4c",
   greenPrimary: "#105f04",
   redPrimary: "#b50303",
@@ -23,7 +23,8 @@ const color = {
 };
 
 const LightTheme = {
-  body: color.whitePrimary,
+  body: color.whiteSecondary,
+  primary: color.whitePrimary,
   fontColor: color.blackPrimary,
   headerBackground: color.whitePrimary,
   iconsColor: color.blackSecondary,
@@ -44,7 +45,8 @@ const LightTheme = {
 };
 
 const OrangeTheme =  {
-    body: color.orangePrimary,
+  primary: color.orangePrimary,
+  body: color.orangeSecondary,
     fontColor: color.whiteSecondary,
     headerBackground: color.orangePrimary,
     iconsColor: color.whitePrimary,
@@ -67,6 +69,7 @@ const OrangeTheme =  {
   };
 
 const DarkTheme = {
+  primary: color.blackPrimary,
   body: color.blackPrimary,
   fontColor: color.whiteSecondary,
   headerBackground: color.blackPrimary,
@@ -121,7 +124,7 @@ body {
 }
 
 .footer {
-    background: ${props => props.theme.body};
+    background: ${props => props.theme.primary};
     color: ${props => props.theme.fontColor}
 }
 
@@ -236,7 +239,10 @@ a {
 }
 
 .sellersCanvas .contain__content {
-    background: ${props => props.theme.sellersCanvasItems}
+    background: ${props => props.theme.primary}
+}
+.contain__heading{
+    background: ${props => props.theme.primary} 
 }
 
 .product__card__wrapper {
@@ -261,19 +267,19 @@ a {
     color: ${props => props.theme.fontColor}
 }
 commentHeader{
-    background: ${props => props.theme.body};
+    background: ${props => props.theme.primary};
 }
 .subHeader{
     background: ${props => props.theme.sidebarBackground};
 }
 .SubmitIcon{
-    background: ${props => props.theme.body};
+    background: ${props => props.theme.primary};
 }
 .textarea{
-    background: ${props => props.theme.body};
+    background: ${props => props.theme.primary};
 }
 .productInfoCanvas{
-    background: ${props => props.theme.body};
+    background: ${props => props.theme.primary};
 }
 
 

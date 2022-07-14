@@ -1,12 +1,10 @@
 @import "../../base";
 
 .status {
-  display: none;
+  display: grid;
 }
 
-@media screen and (max-width: $breakpoint-small) {
+// @media screen and (max-width: $breakpoint-small) {
 
-  .status {
-    display: block;
-}
-}
+  
+// }

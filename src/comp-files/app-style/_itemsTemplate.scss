@@ -2,7 +2,7 @@
 
 .homeContainer {
   display: block;
-  margin-top: 6px;
+  margin-top: 4.1rem;
   -webkit-column-count: 5;
   -moz-column-count: 5;
   column-count: 5;
@@ -118,10 +118,10 @@
   transition: all .25s ease;
   border-radius: 15px;
 }
-.itemStyle::after {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+// .itemStyle::after {
+//     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 
-}
+// }
 .productStyle::after {
     box-shadow: 0px 0px 17px -12px;
 
@@ -148,9 +148,6 @@
   margin-bottom: 5px;
   padding-left: 5px;
 }
-
-
-
 .videoIcon {
   display: none;
 }
@@ -229,7 +226,7 @@
     webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
-    padding: 0.7rem;
+    padding: 0 0.7rem;
   }
 
   .homeContainerItems {

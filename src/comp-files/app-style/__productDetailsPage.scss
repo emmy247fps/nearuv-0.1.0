@@ -25,7 +25,7 @@
     padding-top: 1rem;
   }
   .productInfoContainer{
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
   }
   .productInfoRow{
     display: flex;
@@ -34,10 +34,16 @@
   padding-top: 1rem;
   }
   .column1 {
-    width: 20%;
+    width: 70%;
     background: white;
     display: flex;
     flex-direction: column;
+  }
+  .section1{
+    width: 30%;
+  }
+  .sectionWrap{
+    display: flex;
   }
   .navigationHeader{
     display: flex;
@@ -56,7 +62,7 @@
     background: white;
     text-decoration: none;
   }
-  .productNav{
+  .navigationList :active{
     background: whitesmoke;
   }
   .navigationList{
@@ -83,33 +89,31 @@
      padding-right: 5px;
      margin-left: -8px;
    }
-   .column2 {
-    width: 50%;
-    background: white;
-  }
-  #sec1{
-    color: red;
-    padding: 3rem 0;
-  }
-  #sec2{
-    color: red;
-    padding: 3rem 0;
-  }
-  #sec3{
-    color: red;
-    padding: 3rem 0;
-  }
-  #sec4{
-    color: red;
-    padding: 3rem 0;
-  }
-  // .section{
-  //   height: auto;
+  //  .column2 {
   //   width: 50%;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
+  //   background: white;
   // }
+  // #sec1{
+  //   color: red;
+  //   padding: 1rem 1rem;
+  // }
+  // #sec2{
+  //   color: red;
+  //   padding: 3rem 0;
+  // }
+  // #sec3{
+  //   color: red;
+  //   padding: 3rem 0;
+  // }
+  // #sec4{
+  //   color: red;
+  //   padding: 3rem 0;
+  // }
+  .section2{
+   padding: 1rem 1rem;
+   color: red;
+   box-shadow: 0px 0px 10px -9px;
+  }
   .availableOffer{
     padding: 2px;
       margin: auto;
@@ -145,18 +149,95 @@
     }
     .column3{
       width: 30%;
+      height: auto;
+      padding: 0rem 1rem;
     }
     .sellers{
       display: flex;
       justify-content: center;
-      background: white;
       margin: 0rem 1rem;
-      border: 4px solid whitesmoke;
+      // border: 4px solid whitesmoke;
           position: sticky;
         top: 3rem;
     }
+    .image__contain img{
+      height: 55px;
+    width: 80px;
+    padding: 3px;
+    }
+    .image__contain{
+      max-width: 347px;
+    //  position: absolute;
+      display: grid;
+      grid-auto-flow: column;
+       user-select: none;
+      overflow-x: auto;
+    }
+    .sellersCanvas::-webkit-scrollbar-thumb{
+      background: red;
+    }
+    .sellersCanvas::-webkit-scrollbar-track{
+      background: green;
+    }
+    .contain__content__profile img{
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+    }
+    .contain__content__profile{
+      display: flex;
+     
+    }
+.contain__content__product__icons{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding-top: 10px;
+}
+.productName{
+  @include line-clamp(1.5)
+}
+.sellerIcon{
+display: flex;
+flex-direction: row;
+}
+.sellersHeaderIcon{
+  display: flex;
+  text-align: center;
+  gap: 5;
+}
+// .sellerName{
+//   margin-top: 10px;
+// }
+.sellerSearchBar{
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+}
+.contain__content{
+  padding: 5px;
+    box-shadow: 0px 0px 10px -9px;
+    margin: 5px;
+}
+.contain__heading{
+  padding: 10px;
+  position: sticky;
+  top: 3.5rem;
+}
 
+.sellersContainer {
+  // overflow-y: scroll;
 
+  // &::-webkit-scrollbar {
+  //   width: 40px;
+  // }
+  // &::-webkit-scrollbar-thumb {
+  //   background: red
+  // }
+  // &::-webkit-scrollbar-track {
+  //   background: blue
+  // }
+}
 
 @media screen and (max-width: $breakpoint-small) {
 .content {

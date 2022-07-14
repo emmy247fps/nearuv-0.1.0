@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { topMenuData } from "../../redux/actions";
 import { sidebarAction } from "../../redux/actions";
 import TheContent from "./TheContent";
+import Status from "../../comp-files/components/Status";
 // import PrivateRouting from "./PrivateRouting";
 
 const MainLayout = (props) => {
@@ -43,6 +44,7 @@ const MainLayout = (props) => {
       <Header
         handleToggleMobileMenu={handleToggleMobileMenu}
       />
+
       <Sidebar activeElement={activeElement} handleNavItem={handleNavItem} />
       <div className="layoutOneContainer">
        <TheContent />
