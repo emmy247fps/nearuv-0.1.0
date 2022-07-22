@@ -3,3 +3,4 @@ export * from "./canvas";
 export * from "./category-reducers";
 export * from "./globalProductReducer";
 export * from "./video-reducers";
+export * from "./productPage-reducers";

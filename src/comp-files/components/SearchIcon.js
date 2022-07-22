@@ -4,7 +4,7 @@ import '../app-style/__searchIcon.scss'
 
 const SearchIcon = () => {
   return (
-   <div class="flexbox">
+   <div class="searchContainer">
    <div class="search">
      {/* <h1>Click on search icon</h1> */}
      <div>

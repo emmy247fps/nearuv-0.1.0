@@ -3,7 +3,7 @@ import "../../../comp-files/app-style/_home.scss";
 // import "../../../comp-files/app-style/_mobileCategoryMenu.scss";
 import "../../../comp-files/app-style/_video.scss";
 import { useDispatch } from "react-redux";
-import { clickedVideos } from "../../../redux/actions/video.actions";
+// import { clickedVideos } from "../../../redux/actions/video.actions";
 import { Link, useNavigate } from 'react-router-dom'
 import { productCard } from '../../../utilities'
 import { useLocation } from 'react-router-dom'
@@ -23,9 +23,9 @@ const Home = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate()
  
-  const toggle = (values) => {
-    dispatch(clickedVideos(values));
-  };
+  // const toggle = (values) => {
+  //   dispatch(clickedVideos(values));
+  // };
   // const [elRefs, setElRefs] = useState([])
   // const [loading, setLoading] = useState(false)
   // const histroy = useLocation();

@@ -37,6 +37,11 @@ const initState = {
     error: null,
   },
 
+  pDTemplateSwitch: {
+    display: 'sellers',
+    loading: false
+  },
+
   category: {
     categories: [],
     error: null,

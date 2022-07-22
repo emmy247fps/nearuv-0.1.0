@@ -1,0 +1,22 @@
+.filterTemplateContainer{
+ display: flex;
+ flex-direction: column;
+ background: white;
+ cursor: pointer;
+}
+.filterTemplateContainer :active{
+ background: whitesmoke;
+}
+.dropdown ul{
+ display: none;
+}
+ul{
+
+ list-style-type: none;
+}
+.dropdown {
+ position: relative;
+}
+.dropdown:hover ul{
+ display: initial;
+}

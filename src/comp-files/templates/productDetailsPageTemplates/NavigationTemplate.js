@@ -1,8 +1,9 @@
 import React from 'react'
+import '../../app-style/__navigationTemplate.scss'
 
 const NavigationTemplate = () => {
   return (
-   <div>
+   <div className="navigationTemplate">
    <div className="navigationHeader">
    <h2>Navigation</h2>
 </div>

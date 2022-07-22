@@ -9,7 +9,8 @@ import {
   videoReducer,
   categoryReducer,
   globalProductReducer,
-  getGlobalStoreProductInfoBySlugReducer
+  getGlobalStoreProductInfoBySlugReducer,
+  pDTemplateSwitchReducer
 } from "../reducers";
 
 const reducer = {
@@ -20,6 +21,8 @@ const reducer = {
   sidebar: sidebarReducer,
   sideMenuContent: sideMenuContentReducer,
   topMenuData: topMenuDataReducer,
+  pDTemplateSwitch: pDTemplateSwitchReducer
+
 };
 
 export default reducer;

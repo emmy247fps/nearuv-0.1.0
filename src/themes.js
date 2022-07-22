@@ -4,7 +4,7 @@ const color = {
 
   orangePrimary: "#b33400",
   orangeSecondary: "#f74902",
-  blackPrimary: "#080808",
+  blackPrimary: "#0F1111",
   blackSecondary: "#16181b",
   whitePrimary: " #ffffff",
   whiteSecondary: "#f3f3f3b0",
@@ -13,7 +13,7 @@ const color = {
   redPrimary: "#b50303",
   grey: "#e7e7e7e7",
   whiteBoxShadowSecondary: "#e3e3e3",
-  iconTransitionBlackPrimary: " #080808 0.9s ease-in-out",
+  iconTransitionBlackPrimary: " #0F1111 0.9s ease-in-out",
   iconTransitionWhitePrimary: " #ffffff 0.9s ease-in-out",
   whiteGrayBlockedContent: "#2624245c",
   blackGrayBlockedContent: "#2624245c",
@@ -240,9 +240,6 @@ a {
 
 .sellersCanvas .contain__content {
     background: ${props => props.theme.primary}
-}
-.contain__heading{
-    background: ${props => props.theme.primary} 
 }
 
 .product__card__wrapper {
