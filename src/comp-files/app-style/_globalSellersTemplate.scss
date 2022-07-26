@@ -26,6 +26,10 @@
   /* border-radius: 11px; */
   background: white;
   max-width: 21rem;
+  .active {
+    background: black;
+    color: white
+  }
 }
 .contain__content__profile{
  display: flex;

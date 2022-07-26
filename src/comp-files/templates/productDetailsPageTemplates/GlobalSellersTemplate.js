@@ -2,18 +2,48 @@ import React, { useState } from 'react'
 import {IoIosArrowDropdown, IoIosClose, IoIosInformationCircleOutline, IoIosShareAlt,  } from 'react-icons/io'
 import { globalSellersIcons } from "../../../comp-files/Icons";
 import { products } from '../../../utilities';
-import "../../../comp-files/app-style/__globalSellersTemplate.scss";
+import "../../../comp-files/app-style/_globalSellersTemplate.scss";
+import { FiFilter } from "react-icons/fi";
+import { DataLoading } from "../../../comp-files/hoc/Loading";
+import { useDispatch, useSelector } from "react-redux";
+import { pDTemplateSwitch, sidebarAction } from "../../../redux/actions";
+
+
 
 const GlobalSellersTemplate = (props) => {
- const { data} = props
+    const [activeElement, setActiveElement] = useState("");
+
+ const { data, activeItem, setOpen} = props
  const [showThumb, setShowThumb] = useState(false)
 
+    const selectedSeller =(item)=>{
+        setActiveElement(item.sellerName)
+        setOpen(false)
+        console.log(item)
 
-  return (
-        <div className="sellers : Open">
+    }
+    const dispatch = useDispatch()
+    const { display, loading } = useSelector(state => state.pDTemplateSwitch)
+
+    const clickHandler = (info) => {
+        dispatch(pDTemplateSwitch(info))
+    }
+
+  return  data.length > 0 && <div className="sellers : Open">
                <div className="sellersContainer">
-               {data.sellers.map((item, i) => (
-                   <div className="contain__content" key={i}>
+          <div className="sellersHeaderIcon">
+              <FiFilter size={20} onClick={() => clickHandler('filter')} className="Icon" />
+          </div>
+               {data.map((item, i) => (
+                   <div 
+                    key={i} 
+                    onClick={()=>selectedSeller(item)}
+                    className={
+                       activeElement === item.sellerName
+                           ? `contain__content active`
+                           : 'contain__content'}
+                        
+                           >
                        <div className="contain__content__profile">
                         <div className='profileInfo'>
                            <img
@@ -66,9 +96,14 @@ const GlobalSellersTemplate = (props) => {
                        </div>
                    </div>
                ))}
-               </div> 
+               </div>
+      {loading ? 'Loading please wait' : display === 'sellers' ? <GlobalSellersTemplate
+          data={data}
+      /> : display === 'filter' ? 'fdghshds' :
+              display === 'navigate' && 'fdghshds'
+      } 
        </div>
-  )
+  
 }
 
 export default GlobalSellersTemplate

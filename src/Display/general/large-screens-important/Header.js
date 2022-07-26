@@ -16,7 +16,7 @@ import { sidebarAction, sideMenuContentAction } from "../../../redux/actions/can
   const topMenuDisplay = useSelector(state=>state.sideMenuContent.display)
   const dispatch = useDispatch();
   const toggleMenu = () => {
-    if ( sidebar.display  ) return    dispatch(sidebarAction(false));
+    if ( sidebar.display  ) return dispatch(sidebarAction(false));
     else { dispatch(sidebarAction(true));}
   };
 

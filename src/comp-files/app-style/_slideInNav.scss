@@ -1,0 +1,40 @@
+@import "../../base";
+
+
+.sidebarContainer{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: scroll;
+    z-index: 3;
+    box-shadow: -2px 3px 7px;
+    transition: transform .4s ease-in-out;
+    background: white;
+ 
+    &.closeSidebarLeft {
+        min-width: 4rem; 
+        transform: translateX(-120%);
+    }
+    &.closeSidebarTop {
+     min-width: 4rem;
+     transform: translateY(0%);
+    }
+    &.closeSidebarRight {
+     min-width: 4rem;
+     transform: translateX(1000%);
+    }
+    &.closeSidebarBottom {
+     min-width: 4rem;
+     transform: translateY(120%);
+    }
+}
+
+
+@media screen and (max-width: $breakpoint-small) {
+    .sidebar {
+        display: none
+    }
+}

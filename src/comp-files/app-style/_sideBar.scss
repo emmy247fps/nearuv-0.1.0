@@ -8,13 +8,12 @@
     height: 100vh;
     padding: 2rem 0 5rem 0;
     position: fixed;
+    top: 0;
     overflow: scroll;
-    z-index: 3;
+    z-index: 6;
     box-shadow: -2px 3px 7px;
     transition: transform .4s ease-in-out;
    
-    
-
     hr {
         height: 3px;
     }
@@ -46,7 +45,7 @@
     &.close__sidebar {
        
         width: 4rem; 
-        transform: translateX(-120%);
+        transform: translateX(10000%);
         
         hr {
             height: 3px;
