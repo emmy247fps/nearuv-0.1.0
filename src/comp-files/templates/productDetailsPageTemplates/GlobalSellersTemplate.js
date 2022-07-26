@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {IoIosArrowDropdown, IoIosClose, IoIosInformationCircleOutline, IoIosShareAlt,  } from 'react-icons/io'
+import { IoIosArrowDropdown, IoIosClose, IoIosInformationCircleOutline, IoIosShareAlt, IoIosSearch } from 'react-icons/io'
 import { globalSellersIcons } from "../../../comp-files/Icons";
 import { products } from '../../../utilities';
 import "../../../comp-files/app-style/_globalSellersTemplate.scss";
@@ -7,7 +7,6 @@ import { FiFilter } from "react-icons/fi";
 import { DataLoading } from "../../../comp-files/hoc/Loading";
 import { useDispatch, useSelector } from "react-redux";
 import { pDTemplateSwitch, sidebarAction } from "../../../redux/actions";
-
 
 
 const GlobalSellersTemplate = (props) => {
@@ -31,8 +30,11 @@ const GlobalSellersTemplate = (props) => {
 
   return  data.length > 0 && <div className="sellers : Open">
                <div className="sellersContainer">
+          <div className="sellersContainerHeading">
           <div className="sellersHeaderIcon">
-              <FiFilter size={20} onClick={() => clickHandler('filter')} className="Icon" />
+                <IoIosSearch size={25}/>
+                  <FiFilter size={25} />
+          </div>
           </div>
                {data.map((item, i) => (
                    <div 
@@ -97,11 +99,11 @@ const GlobalSellersTemplate = (props) => {
                    </div>
                ))}
                </div>
-      {loading ? 'Loading please wait' : display === 'sellers' ? <GlobalSellersTemplate
+      {/* {loading ? 'Loading please wait' : display === 'sellers' ? <GlobalSellersTemplate
           data={data}
       /> : display === 'filter' ? 'fdghshds' :
               display === 'navigate' && 'fdghshds'
-      } 
+      }  */}
        </div>
   
 }

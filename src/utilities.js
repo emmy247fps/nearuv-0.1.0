@@ -937,12 +937,30 @@ const products =[
 		img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
 		tagline:"",
     productSlug: '/comment',
+    globalImage: [
+      { img: "https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" },],
     globalProductImage: [
+     
       {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
-      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
-      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
-      {img:"https://images.unsplash.com/photo-1652040703185-9da58020a862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"},
-      
+      {
+        img:
+          "https://images.pexels.com/photos/1076240/pexels-photo-1076240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      }, {
+        img:
+          "https://images.pexels.com/photos/2516406/pexels-photo-2516406.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        img:
+          "https://images.pexels.com/photos/2413238/pexels-photo-2413238.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        img:
+          "https://images.pexels.com/photos/1714455/pexels-photo-1714455.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
+      {
+        img:
+          "https://images.pexels.com/photos/2407265/pexels-photo-2407265.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      },
     ],
     sellers: [
       {
