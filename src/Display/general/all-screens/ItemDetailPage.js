@@ -19,163 +19,163 @@ import { globalSellersIcons } from "../../../comp-files/Icons";
 const ItemDetailPage = (props) => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.selectedGlobalItem);
-  const {productInfo, sellers} = data;
+  const { productInfo, sellers } = data;
 
-  useEffect(()=>{
-    const {slug} = props.match.params;
+  useEffect(() => {
+    const { slug } = props.match.params;
     dispatch(getGlobalStoreProductInfoBySlug(slug))
-  },[props, dispatch]);
+  }, [props, dispatch]);
 
 
   return (
     <div className="content">
-    <div className="productInfoCanvas open" > 
-      <div className="heading">
-        <IoIosClose
-          className="seller__body__heading__icons__cancel"
-          // onClick={close}
-          size={40}
-        />
-      </div>
-      <div className="body">
-        {/* globalImage  */}
-        <div className="swiperContainer">
-          <div className="swiper-wrapper">
-            <div className="swiper-slider">
-              {productInfo.globalProductImage &&
-                productInfo.globalProductImage.length > 0 &&
-                productInfo.globalProductImage.map((item, index) => (
-                  <img
-                    src={generatePublicUrl(item.img)}
-                    key={index}
-                    alt={productInfo.productName}
-                  />
-                ))}
+      <div className="productInfoCanvas open" >
+        <div className="heading">
+          <IoIosClose
+            className="seller__body__heading__icons__cancel"
+            // onClick={close}
+            size={40}
+          />
+        </div>
+        <div className="body">
+          {/* globalImage  */}
+          <div className="swiperContainer">
+            <div className="swiper-wrapper">
+              <div className="swiper-slider">
+                {productInfo.globalProductImage &&
+                  productInfo.globalProductImage.length > 0 &&
+                  productInfo.globalProductImage.map((item, index) => (
+                    <img
+                      src={generatePublicUrl(item.img)}
+                      key={index}
+                      alt={productInfo.productName}
+                    />
+                  ))}
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="product__details__layout">
-          {/* Here is the global product information */}
-          {productInfo && (
-            <div className="productInfo">
-              <h2 className="product__name">{productInfo.productName}</h2>
-              <div className="product__rating">
-                <span className="global">Global:</span>
-                <span className="global__number">4.7*</span>
-                <span className="global__likes">700 likes</span>
-                <span className="global__reviews">300 comments</span>
-              </div>
-              <div className="global__offer">
-                <h4>Available offers</h4>
-                <span>
-                  {productInfo.globalOffer &&
-                  productInfo.globalOffer.length > 0 ? (
-                    productInfo.globalOffer.map((item, index) => (
-                      <div className="global__offer__items" key={index}>
-                        {item.offer} {item.terms}
-                      </div>
-                    ))
-                  ) : (
-                    <div className="global__offer__items"> No items yet </div>
-                  )}
-                </span>
-              </div>
-            </div>
-          )}
-          {data && <>{data.loading ? DataLoading() : <div> Get items </div>}</>}
-        </div>
-      </div>
-    </div>
-    
-    
-    {/* Here is the global sellers container */}
-    
-    <div className="sellersCanvas open">
-      <div className="contain">
-        {sellers.loading ? (
-          DataLoading("sellers")
-        ) : (
-          <>
-            <div className="contain__heading">
-              <div className="heading__bar">
-                <IoIosClose
-                  className="icons icons__cancel"
-                  size={40}
-                />
-              </div>
-              <div className="contain__heading__location">
-                <input type="search" defaultValue="Ikeja" />
-              </div>
-              <h4>
-                <span>
-                  {sellers.length === 1 ? (
-                    <p>{sellers.length} Seller in your location</p>
-                  ) : sellers.length > 1 ? (
-                    <p>{sellers.length} Sellers in your location</p>
-                  ) : (
-                    <p>No seller is selling this product</p>
-                  )}{" "}
-                </span>
-              </h4>
-            </div>
-
-            {sellers.map((item, index) => (
-              <div className="contain__content" key={index}>
-                <div className="contain__content__profile">
-                  <img
-                    src={
-                      item.sellerId.image.length > 0
-                        ? generatePublicUrl(item.sellerId.image[0].img)
-                        : "/logo.png"
-                    }
-                    alt={item.sellerId.username}
-                  />
-                  <span>{item.sellerId.username}</span>
-                  <span className="contain__content__profileInformation">
-                    <IoIosInformationCircleOutline
-                      className="icons iconsInformation"
-                      size={20}
-                    />
+          <div className="product__details__layout">
+            {/* Here is the global product information */}
+            {productInfo && (
+              <div className="productInfo">
+                <h2 className="product__name">{productInfo.productName}</h2>
+                <div className="product__rating">
+                  <span className="global">Global:</span>
+                  <span className="global__number">4.7*</span>
+                  <span className="global__likes">700 likes</span>
+                  <span className="global__reviews">300 comments</span>
+                </div>
+                <div className="global__offer">
+                  <h4>Available offers</h4>
+                  <span>
+                    {productInfo.globalOffer &&
+                      productInfo.globalOffer.length > 0 ? (
+                      productInfo.globalOffer.map((item, index) => (
+                        <div className="global__offer__items" key={index}>
+                          {item.offer} {item.terms}
+                        </div>
+                      ))
+                    ) : (
+                      <div className="global__offer__items"> No items yet </div>
+                    )}
                   </span>
                 </div>
-                <div className="contain__content__product">
-                  <div className="image__contain">
+              </div>
+            )}
+            {data && <>{data.loading ? DataLoading() : <div> Get items </div>}</>}
+          </div>
+        </div>
+      </div>
+
+
+      {/* Here is the global sellers container */}
+
+      <div className="sellersCanvas open">
+        <div className="contain">
+          {sellers.loading ? (
+            DataLoading("sellers")
+          ) : (
+            <>
+              <div className="contain__heading">
+                <div className="heading__bar">
+                  <IoIosClose
+                    className="icons icons__cancel"
+                    size={40}
+                  />
+                </div>
+                <div className="contain__heading__location">
+                  <input type="search" defaultValue="Ikeja" />
+                </div>
+                <h4>
+                  <span>
+                    {sellers.length === 1 ? (
+                      <p>{sellers.length} Seller in your location</p>
+                    ) : sellers.length > 1 ? (
+                      <p>{sellers.length} Sellers in your location</p>
+                    ) : (
+                      <p>No seller is selling this product</p>
+                    )}{" "}
+                  </span>
+                </h4>
+              </div>
+
+              {sellers.map((item, index) => (
+                <div className="contain__content" key={index}>
+                  <div className="contain__content__profile">
                     <img
                       src={
                         item.sellerId.image.length > 0
                           ? generatePublicUrl(item.sellerId.image[0].img)
                           : "/logo.png"
                       }
-                      alt=""
+                      alt={item.sellerId.username}
                     />
+                    <span>{item.sellerId.username}</span>
+                    <span className="contain__content__profileInformation">
+                      <IoIosInformationCircleOutline
+                        className="icons iconsInformation"
+                        size={20}
+                      />
+                    </span>
                   </div>
-                  <span>{item.productName}</span>
-                  <div className="product__price">
-                    <div>
-                      <span className="currency">$</span>
-                      <span className="figure">{item.sellingPrice}</span>
-                      <span className="icons">
-                        <IoIosArrowDropdown />
-                      </span>
+                  <div className="containContentProduct">
+                    <div className="image__contain">
+                      <img
+                        src={
+                          item.sellerId.image.length > 0
+                            ? generatePublicUrl(item.sellerId.image[0].img)
+                            : "/logo.png"
+                        }
+                        alt=""
+                      />
+                    </div>
+                    <span>{item.productName}</span>
+                    <div className="product__price">
+                      <div>
+                        <span className="currency">$</span>
+                        <span className="figure">{item.sellingPrice}</span>
+                        <span className="icons">
+                          <IoIosArrowDropdown />
+                        </span>
+                      </div>
+                    </div>
+                    <div className="containContentProduct__icons">
+                      {globalSellersIcons.map((item, index) => (
+                        <div key={index} className="icons" size={item.size}>
+                          <item.icon />
+                          <span>{item.name}</span>
+                        </div>
+                      ))}
                     </div>
                   </div>
-                  <div className="contain__content__product__icons">
-                    {globalSellersIcons.map((item, index) => (
-                      <div key={index} className="icons" size={item.size}>
-                        <item.icon />
-                        <span>{item.name}</span>
-                      </div>
-                    ))}
-                  </div>
                 </div>
-              </div>
-            ))}
-          </>
-        )}
+              ))}
+            </>
+          )}
+        </div>
       </div>
-    </div>
-  
+
     </div>
   );
 };

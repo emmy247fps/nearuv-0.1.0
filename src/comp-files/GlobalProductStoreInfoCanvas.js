@@ -247,7 +247,7 @@
 //                     />
 //                   </span>
 //                 </div>
-//                 <div className="contain__content__product">
+//                 <div className="containContentProduct">
 //                   <div className="image__contain">
 //                     <img
 //                       src={
@@ -268,7 +268,7 @@
 //                       </span>
 //                     </div>
 //                   </div>
-//                   <div className="contain__content__product__icons">
+//                   <div className="containContentProduct__icons">
 //                     {globalSellersIcons.map((item, index) => (
 //                       <div key={index} className="icons" size={item.size}>
 //                         <item.icon />
