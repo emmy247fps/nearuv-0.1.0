@@ -1,11 +1,113 @@
 @import "../../base";
 
-.mobileOverlay {
-  display: none;
-}
+    .comment {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+  
+      &Header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: inset 0px 0px 0px 1px;
+  
+        .commentNavbar {
+          height: 50px;
+          box-shadow: inset 0px 0px 0 px 1px;
+        }
+  
+        .subHeader {
+          display: flex;
+         position: fixed;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+        z-index: 10;
+        padding: .5rem;
+        // background: red;
+        }
+  
+        .SubmitIcon {
+          align-items: center;
+          width: 3%;
+          font-weight: 200;
+          // padding: 0.7rem;
+          border-radius: 0px 10px 10px 0px;
+          // height: 3rem;
+  
+        }
+  
+        .textarea {
+          width: 80%;
+          border: none;
+          font-weight: 200;
+          padding: 0.3rem;
+          border-radius: 10px 0px 0px 10px;
+          height: 3rem;
+  
+          &:focus {
+            outline: none;
+          }
+        }
+  
+        .textarea .SubmitIcon:hover {
+          // align-items: center;
+          border: 1px solid red;
+          color: aqua;
+        }
+      }
+  
+      &Body {
+        display: block;
+        height: 90%;
+        overflow: auto;
+        overscroll-behavior: contain;
+        white-space: nowrap;
+        margin: 100px 10px 50px 10px;
+      }
+  
+      &Footer {
+        // position: fixed;
+        // bottom: 0;
+        // left: 0;
+        // width: 100%;
+        // z-index: 10;
+        // background: red;
+  
+        .cardInfo {
+          grid-area: stats;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+          align-items: center;
+          z-index: 10;
+        }
+  
+        .cardInfo .cardItems {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+  
+        .cardItems {
+          border: 1px solid white;
+          font-size: 0.8rem;
+        }
+  
+      }
+      .sendIcon{
+        align-items: center;
+      }
+  
+    }
 
 @media screen and (max-width: $breakpoint-small) {
-
   .comment {
     position: absolute;
     top: 0;
@@ -94,87 +196,6 @@ background: red;
   }
  
 }
-    
-      //   max-height: 20%;
-      // //   margin-top: auto;
-      // // overscroll-behavior: contain;
-   
 
-    //     // background: red;
-    //       flex-direction: column;
-    //       z-index: 7;
-
-    //      
-    //   }
-
-    // //   .itemOverlay{
-    // //     // position: fixed;
-    // //     display: flex;
-    // //   flex-direction: column;
-    // //    bottom: 0;
-    // //     left: 0;
-    // //     right: 0;
-    // //     width: 100%;
-    // //     height: 20%;
-    // //     padding: 0 10px;
-    // //     border-radius: 15px 15px 0 0;
-    // //     z-index: 1;
-    // //  background: red;
-    // //     }
-   
-    // 
-
-  }
-
-
-  // .comment {
-  //   display: flex;
-  //   flex-direction: row;
-  //   flex: 0.6;
-  //   // padding: 10px;
-  //   margin: 0.6rem;
-  //   // border-radius: 3px;
-  //   // border-radius: 8px; 
-  // }
-  //   .rating{
-  //     font-size: 0.8rem;
-  //   //  margin-top: -11px;
-  //      }
-  //      .description{
-  //       font-size: 0.8rem;
-  //        padding-left: 25px;
-  //        padding-top: 10px;
-  //       //  @include line-clamp(4) 
-  //      }
-  //      .SubmitIcon{
-  //        padding: 10px;
-  //      }
-  //      .addedComment{
-  //        padding-left: 25px;
-  //        font-size: 0.6rem;
-  //        max-Width: 100vw;
-  //      }
-  //     .value{
-  //   margin-top: 3px;
-  //     }
-  //       textarea {
-  //         width: 100%;
-  //         border: none;
-  //         font-weight: 500;
-  //         padding: 0.3rem;
-  //         &:focus {
-  //           outline: none;
-  //         }
-  //       }
-
-  //       button{
-  //         // border: none;
-  //         padding: 0 0.2rem;
-  //         // background: transparent;
-  //         outline: none;
-  //         &:focus{
-  //             border: none
-  //         }
-  //       }
-
+}
 }

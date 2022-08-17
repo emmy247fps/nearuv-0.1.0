@@ -305,6 +305,9 @@ tr:nth-child(even) {
  .progressBar[value]::-webkit-progress-bar{
      background: ${props => props.theme.sidebarBackground};
  }
+  .textarea {
+    color: ${props => props.theme.fontColor}
+  }
 `;
 
 export { LightTheme, DarkTheme, OrangeTheme, GlobalStyles };

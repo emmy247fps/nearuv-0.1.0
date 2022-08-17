@@ -28,7 +28,7 @@
 }
 
 .homeContainerItems img {
-  height: 100%;
+  // height: 100%;
   transition: all .25s ease;
 }
 
@@ -166,7 +166,7 @@
   }
 
 .homeContainerItems img {
-  height: 100%;
+  // height: 100%;
   transition: all .25s ease;
 }
 
@@ -305,8 +305,8 @@
     justify-content: center;
   }
   .id{
-    display: block;
-    margin-left: -34px;
+        display: grid;
+    margin-left: -25px;
   }
   .mobileIcon{
     display: block;
