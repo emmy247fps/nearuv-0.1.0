@@ -532,7 +532,7 @@ const ProductDetailsPage = () => {
                             </div>
                                      
                             </div>
-                         <div class="customerReview">
+                             <div class="customerReview">
                                 <div className="customerReviewName">
                                     <h2>Customer reviews</h2>
                                 </div>
@@ -664,7 +664,8 @@ const ProductDetailsPage = () => {
                                     </div>
                                 </div>
                             </div>
-                </div>
+                       </div>
+                      
                          </div>
                       
                        

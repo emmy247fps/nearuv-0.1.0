@@ -1,201 +1,291 @@
 @import "../../base";
 
+
+// .commentHeader{
+//   margin-top: 1rem;
+//   padding: 1%;
+//   font-size: 2em;
+//   text-align: center;
+//   background: white;
+//   border: 1px solid whitesmoke;
+// }
+// .commentHeaderTitle{
+//   font-size: .8em;
+// }
+// .commentHeaderBackIcon{
+//   float: left;
+// }
+// .commentHeaderSendIcon{
+//   float: right;
+// }
+// .commentBody{
+//   width: 100%;
+// }
+// .img{
+// width: 20%;
+// }
+
+.commentRow{
+   display: flex;
+      max-width: 100%;
+      justify-content: space-between;
+}
+
     .comment {
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 1rem;
+      display:flex;
+      flex: 55;
+  margin-top: 1rem;
+  height: 100vh;
+  text-align: center;
+  background: white;
+    }
+     .commentHeader{
+        font-size: 2em;
+ 
+      }
+      .commentSideBarSection{
+        // width: 26%;
+        border: 1px solid whitesmoke;
+        height: 558px;
+        padding: 10px;
+        padding: 0.5rem;
+        overflow-y: scroll;
+
+      }
+      .commentSideBarContainer{
+         display: flex;
+        align-items: center;
+        padding: 1rem 0.5rem;
+       border-bottom: 1px solid whitesmoke;
+        cursor: pointer;
+      }
+      .commentSideBarContainerDetails{
+        margin-left: 15px;
+        position: relative;
+        // width: 100%;
+      }
+      .commentSideBarContainerDetailsDate{
+       position: absolute;
+    top: 5px;
+    left: 190px;
+      }
+
+      .commentFooter{
+          display: flex;
+    bottom: 0;
+    width: inherit;
+    position: fixed;
+    align-items: center;
+    border-top: 1px solid whitesmoke;
+        }
   
-      &Header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        border-radius: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        box-shadow: inset 0px 0px 0px 1px;
-  
+      .commentBody {
+        width: 74%;
+        height: 78vh;
+        margin: .5rem;
+      }
         .commentNavbar {
           height: 50px;
           box-shadow: inset 0px 0px 0 px 1px;
         }
-  
-        .subHeader {
-          display: flex;
-         position: fixed;
-       bottom: 0;
-       left: 0;
-       width: 100%;
-        z-index: 10;
-        padding: .5rem;
-        // background: red;
-        }
-  
-        .SubmitIcon {
+      .SubmitIcon {
           align-items: center;
           width: 3%;
           font-weight: 200;
-          // padding: 0.7rem;
           border-radius: 0px 10px 10px 0px;
-          // height: 3rem;
-  
         }
-  
         .textarea {
           width: 80%;
           border: none;
           font-weight: 200;
           padding: 0.3rem;
-          border-radius: 10px 0px 0px 10px;
+          border-radius: 10px 0px 0px 10px red;
           height: 3rem;
-  
-          &:focus {
+        }
+         .textarea:focus {
             outline: none;
+            // color: red;
           }
-        }
-  
-        .textarea .SubmitIcon:hover {
-          // align-items: center;
-          border: 1px solid red;
-          color: aqua;
-        }
-      }
-  
-      &Body {
-        display: block;
-        height: 90%;
-        overflow: auto;
-        overscroll-behavior: contain;
-        white-space: nowrap;
-        margin: 100px 10px 50px 10px;
-      }
-  
-      &Footer {
-        // position: fixed;
-        // bottom: 0;
-        // left: 0;
-        // width: 100%;
-        // z-index: 10;
-        // background: red;
-  
-        .cardInfo {
-          grid-area: stats;
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-template-rows: 1fr;
-          align-items: center;
-          z-index: 10;
-        }
-  
-        .cardInfo .cardItems {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-        }
-  
-        .cardItems {
-          border: 1px solid white;
-          font-size: 0.8rem;
-        }
-  
-      }
       .sendIcon{
         align-items: center;
       }
-  
+       .commentSection {
+        padding: 1%;
+        display: flex;
+      // display: flex;
+      // align-items: center;
+      // position: relative;
+      // width: fit-content;
+      // justify-content: space-between;
+      
     }
+
+    .commentSideBar{
+          width: 26%;
+          height: 78vh;
+    }
+    .commentNote{
+    // background: gray;
+        padding: 1%;
+    font-size: 1.1em;
+    width: 46%;
+    float: left;
+    text-align: initial;
+    // border-radius: 10px;
+    // margin: 10px;
+    // margin-right: auto;
+    }
+    .commentNoteName{
+      font-weight: bold;
+    }
+    .commentLikeIcon{
+      padding-top: 1%;
+      float: right;
+      width: 25%;
+      text-align: center;
+      // background: red;
+    }
+    .muted{
+          padding-top: 2%;
+    font-size: 0.8em;
+    color: gray;
+    // margin-right: 14rem;
+    }
+    .muted >span{
+      margin-right: 2%;
+    }
+   .section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+    flex-direction: column;
+    height: 498px;
+    overflow-y: scroll;
+   }
+   .button-icon{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+  //  color: green;
+  //  background: red;
+   border: none;
+   outline: none;
+   border-radius: 50%;
+   }
+   .number{
+     position: absolute;
+    right: -6px;
+    top: -1px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    // background: red;
+    // border: 3px solid white;
+   }
+   .notification{
+    // background: whitesmoke;
+    // border-radius: 50px;
+    // color: green;
+   }
 
 @media screen and (max-width: $breakpoint-small) {
-  .comment {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 1rem;
-    &Header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      border-radius: 0;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      box-shadow: inset 0px 0px 0px 1px;
-      .commentNavbar{
-        height: 50px;
-        box-shadow: inset 0px 0px 0 px 1px;
-      }
-      .subHeader {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100vw;
-        padding: 1rem;
-      }
-      .SubmitIcon{
-        width: 12%;
-        font-weight: 200;
-        // padding: 0.7rem;
-        border-radius: 0px 10px 10px 0px;
-        height: 3rem;
+//   .comment {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     padding: 1rem;
+//     &Header {
+//       position: fixed;
+//       top: 0;
+//       left: 0;
+//       border-radius: 0;
+//       width: 100%;
+//       display: flex;
+//       flex-direction: column;
+//       box-shadow: inset 0px 0px 0px 1px;
+//       .commentNavbar{
+//         height: 50px;
+//         box-shadow: inset 0px 0px 0 px 1px;
+//       }
+//       .subHeader {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         width: 100vw;
+//         padding: 1rem;
+//       }
+//       .SubmitIcon{
+//         width: 12%;
+//         font-weight: 200;
+//         // padding: 0.7rem;
+//         border-radius: 0px 10px 10px 0px;
+//         height: 3rem;
 
-      }
-      .textarea{
-        width: 80%;
-          border: none;
-          font-weight: 200;
-          padding: 0.3rem;
-          border-radius: 10px 0px 0px 10px;
-        height: 3rem;
+//       }
+//       .textarea{
+//         width: 80%;
+//           border: none;
+//           font-weight: 200;
+//           padding: 0.3rem;
+//           border-radius: 10px 0px 0px 10px;
+//         height: 3rem;
 
-          &:focus {
-            outline: none;
-          }
-      }
-      .textarea .SubmitIcon{
-        // position: absolute;
-        // right: 8px;
-        // // top: 8px;
-align-items: center;
-      }
-    }
-    &Body{
-      display: block;
-      height: 90%;
-      overflow: auto;
-      overscroll-behavior: contain;
-        white-space: nowrap;
-        margin: 100px 10px 50px 10px;
-      }
-    &Footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: 10;
-background: red;
-  .cardInfo {
-    grid-area: stats;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    z-index: 10;
-  }
-  .cardInfo .cardItems {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
+//           &:focus {
+//             outline: none;
+//           }
+//       }
+//       .textarea .SubmitIcon{
+//         // position: absolute;
+//         // right: 8px;
+//         // // top: 8px;
+// align-items: center;
+//       }
+//     }
+//     &Body{
+//       display: block;
+//       height: 90%;
+//       overflow: auto;
+//       overscroll-behavior: contain;
+//         white-space: nowrap;
+//         margin: 100px 10px 50px 10px;
+//       }
+//     &Footer {
+//       position: fixed;
+//       bottom: 0;
+//       left: 0;
+//       width: 100%;
+//       z-index: 10;
+// background: red;
+//   .cardInfo {
+//     grid-area: stats;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr 1fr;
+//     grid-template-rows: 1fr;
+//     align-items: center;
+//     z-index: 10;
+//   }
+//   .cardInfo .cardItems {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//   }
 
-  .cardItems {
-    border: 1px solid white;
-    font-size: 0.8rem;
-  }
+//   .cardItems {
+//     border: 1px solid white;
+//     font-size: 0.8rem;
+//   }
  
-}
+// }
 
-}
+// }
 }
