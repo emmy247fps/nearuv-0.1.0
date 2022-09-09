@@ -73,10 +73,10 @@
       .commentFooter{
           display: flex;
     bottom: 0;
-    width: inherit;
+    width: 61%;
     position: fixed;
     align-items: center;
-    border-top: 1px solid whitesmoke;
+    // border-top: 1px solid whitesmoke;
         }
   
       .commentBody {
@@ -139,10 +139,12 @@
       font-weight: bold;
     }
     .commentLikeIcon{
-      padding-top: 1%;
-      float: right;
-      width: 25%;
-      text-align: center;
+      display: flex;
+       padding-top: 1%;
+    float: right;
+    width: 20%;
+    text-align: center;
+    gap: 5px;
       // background: red;
     }
     .muted{
@@ -162,8 +164,9 @@
     flex-direction: column;
     height: 498px;
     overflow-y: scroll;
+    background: #fbfbfb;
    }
-   .button-icon{
+   .notify{
    position: relative;
    display: flex;
    align-items: center;
@@ -178,7 +181,7 @@
    }
    .number{
      position: absolute;
-    right: -6px;
+    right: -3px;
     top: -1px;
     width: 20px;
     height: 20px;
@@ -195,6 +198,12 @@
     // background: whitesmoke;
     // border-radius: 50px;
     // color: green;
+   }
+   .commentWrap{
+      display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+    align-items: center;
    }
 
 @media screen and (max-width: $breakpoint-small) {
