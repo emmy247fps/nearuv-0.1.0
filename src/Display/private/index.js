@@ -3,8 +3,11 @@ const largeScreenPath = './large-screens-important'
 const mobileScreenPath = './small-screen-important'
 
 const  CommentPage = lazy(()=> import(`${mobileScreenPath}/CommentPage`));
-
+const MobileComment = lazy(() => import(`${mobileScreenPath}/MobileComment`));
+const MobileProductListPage = lazy(() => import(`${mobileScreenPath}/MobileProductListPage`));
 
 export {
-    CommentPage
+    CommentPage,
+    MobileComment,
+    MobileProductListPage
 };

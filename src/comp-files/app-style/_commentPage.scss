@@ -24,7 +24,9 @@
 // .img{
 // width: 20%;
 // }
-
+   .mobileComment{
+    display: none;
+  }
 .commentRow{
    display: flex;
       max-width: 100%;
@@ -34,8 +36,8 @@
     .comment {
       display:flex;
       flex: 55;
-  margin-top: 1rem;
-  height: 100vh;
+  // margin-top: 1rem;
+  // height: 100vh;
   text-align: center;
   background: white;
     }
@@ -71,10 +73,11 @@
       }
 
       .commentFooter{
-          display: flex;
+    display: flex;
     bottom: 0;
-    width: 61%;
+    width: -webkit-fill-available;
     position: fixed;
+    background: white;
     align-items: center;
     // border-top: 1px solid whitesmoke;
         }
@@ -205,96 +208,140 @@
     width: -webkit-fill-available;
     align-items: center;
    }
+   @media screen and (max-width: $breakpoint-medium) {
+    .mobileComment{
+    display: none;
+  }
+ .commentSideBar{
+          width: 26%;
+          height: 58vh;
+    }
+    .commentSideBarContainerDetailsDate {
+    position: absolute;
+    top: 5px;
+    left: 110px;
+}
+.commentSideBarContainerDetails {
+    margin-left: 10px;
+    position: relative;
+}
+.commentLikeIcon {
+    display: flex;
+    padding-top: 1%;
+    float: right;
+    width: 25%;
+    text-align: center;
+    gap: 5px;
+}
+.section {
+    display: flex;
+    /* flex-direction: column; */
+    height: 500px;
+    width: 100%;
+    border-radius: 0;
+    flex-direction: column;
+    overflow-y: scroll;
+    background: #fbfbfb;
+}
+.commentSideBarSection {
+    border: 1px solid whitesmoke;
+    height: 570px;
+    padding: 10px;
+    padding: 0.5rem;
+    overflow-y: scroll;
+}
+        }
+
+   
+   @media screen and (max-width: $breakpoint-low-medium) {
+     .mobileComment{
+    display: none;
+  }
+    .section {
+    display: flex;
+    /* flex-direction: column; */
+     height: 500px;
+    width: 100%;
+    border-radius: 0;
+    flex-direction: column;
+    overflow-y: scroll;
+    background: #fbfbfb;
+}
+.commentSideBar{
+  display: none;
+}
+.commentBody {
+    width: 100%;
+    height: 78vh;
+    margin: 0.5rem;
+}
+   }
 
 @media screen and (max-width: $breakpoint-small) {
-//   .comment {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     padding: 1rem;
-//     &Header {
-//       position: fixed;
-//       top: 0;
-//       left: 0;
-//       border-radius: 0;
-//       width: 100%;
-//       display: flex;
-//       flex-direction: column;
-//       box-shadow: inset 0px 0px 0px 1px;
-//       .commentNavbar{
-//         height: 50px;
-//         box-shadow: inset 0px 0px 0 px 1px;
-//       }
-//       .subHeader {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-between;
-//         width: 100vw;
-//         padding: 1rem;
-//       }
-//       .SubmitIcon{
-//         width: 12%;
-//         font-weight: 200;
-//         // padding: 0.7rem;
-//         border-radius: 0px 10px 10px 0px;
-//         height: 3rem;
+  .mobileComment{
+    display: block;
+  }
+.commentSideBar{
+  display: none;
+}
+.largeScreen{
+  display: none;
+}
+.commentSection {
+    padding: 1%;
+    padding-bottom: 3rem;
+    // margin-top: 10%;
+    display: flex;
+}
+.commentNote {
+    padding: 1%;
+    font-size: 1.1em;
+    width: 80%;
+    float: left;
+    text-align: initial;
+}
+.section {
+    display: flex;
+    /* flex-direction: column; */
+    scroll-behavior:none;
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+    flex-direction: column;
+    overflow-y: scroll;
+    background: #fbfbfb;
+}
+.muted {
+   display: grid;
+    padding-top: 2%;
+    font-size: 0.8em;
+    color: gray;
+    justify-content: flex-start;
+    align-items: center;
+}
+.notify {
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
 
-//       }
-//       .textarea{
-//         width: 80%;
-//           border: none;
-//           font-weight: 200;
-//           padding: 0.3rem;
-//           border-radius: 10px 0px 0px 10px;
-//         height: 3rem;
+  .commentFooter {
+    display: flex;
+    bottom: 0;
+    width: 95%;
+    height: 7%;
+    position: fixed;
+    background: white;
+    align-items: center;
+}
+.mobileCommentIcons{
+  display: flex;
+}
 
-//           &:focus {
-//             outline: none;
-//           }
-//       }
-//       .textarea .SubmitIcon{
-//         // position: absolute;
-//         // right: 8px;
-//         // // top: 8px;
-// align-items: center;
-//       }
-//     }
-//     &Body{
-//       display: block;
-//       height: 90%;
-//       overflow: auto;
-//       overscroll-behavior: contain;
-//         white-space: nowrap;
-//         margin: 100px 10px 50px 10px;
-//       }
-//     &Footer {
-//       position: fixed;
-//       bottom: 0;
-//       left: 0;
-//       width: 100%;
-//       z-index: 10;
-// background: red;
-//   .cardInfo {
-//     grid-area: stats;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr 1fr;
-//     grid-template-rows: 1fr;
-//     align-items: center;
-//     z-index: 10;
-//   }
-//   .cardInfo .cardItems {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-//   }
-
-//   .cardItems {
-//     border: 1px solid white;
-//     font-size: 0.8rem;
-//   }
- 
-// }
-
-// }
 }

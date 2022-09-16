@@ -41,16 +41,16 @@ const MainLayout = (props) => {
         toggleMobileMenuContent={toggleMobileMenuContent}
         handleToggleMobileMenuContent={handleToggleMobileMenuContent}
       />
-      <Header
+      {/* <Header
         handleToggleMobileMenu={handleToggleMobileMenu}
-      />
+      /> */}
 
       <Sidebar activeElement={activeElement} handleNavItem={handleNavItem} />
       <div className="layoutOneContainer">
        <TheContent />
       </div>
       
-      <MobileFooterMenu className="mobileView" />
+      {/* <MobileFooterMenu className="mobileView" /> */}
     </>
   );
 };

@@ -1364,6 +1364,71 @@ const photos = [
       "https://images.pexels.com/photos/8979525/pexels-photo-8979525.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
   },
 ];
+const commentPage =[
+  {
+    commentText: "A text is a written or spoken passage,",
+    commentName: "John.Remi",
+    commentTime: "just now"
+  },
+    {
+      commentText: "A text is a written or spoken passage, A text is a written or spoken passage, especially one that is used in a school or university for discussion or in an examination.I 'll read the text aloud .",
+      commentName: "John.Remi",
+      commentTime: "1 minute ago"
+    },
+      {
+        commentText: " A text is a written or spoken passage,A text is a written or spoken passage, especially one that is used in a school or university for discussion or in an examination. I'll read the text aloud .",
+        commentName: "John.Remi",
+        commentTime: "1 hour ago"
+      },
+         {
+           commentText: "A text is a written or spoken passage, A text is a written or spoken passage, especially one that is used in a school or university for discussion or in an examination.I 'll read the text aloud .",
+           commentName: "John.Remi",
+           commentTime: "1 minute ago"
+         },
+          {
+           commentText: " A text is a written or spoken passage,A text is a written or spoken passage, especially one that is used in a school or university for discussion or in an examination. I'll read the text aloud .",
+           commentName: "John.Remi",
+           commentTime: "1 hour ago"
+         },
+            {
+              commentText: "A text is a written or spoken passage, A text is a written or spoken passage, especially one that is used in a school or university for discussion or in an examination.I 'll read the text aloud .",
+              commentName: "John.Remi",
+              commentTime: "1 minute ago"
+            }, 
+            {
+              commentText: " A text is a written or spoken passage,A text is a written or spoken passage, especially one that is used in a school or university for discussion or in an examination. I'll read the text aloud .",
+              commentName: "John.Remi",
+              commentTime: "1 hour ago"
+            },
+               {
+                 commentText: "A text is a written or spoken passage, A text is a written or spoken passage, especially one that is used in a school or university for discussion or in an examination.I 'll read the text aloud .",
+                 commentName: "John.Remi",
+                 commentTime: "1 minute ago"
+               }, 
+               {
+                 commentText: " A text is a written or spoken passage,A text is a written or spoken passage, especially one that is used in a school or university for discussion or in an examination. I'll read the text aloud .",
+                 commentName: "John.Remi",
+                 commentTime: "1 hour ago"
+               },
+                  {
+                    commentText: "A text is a written or spoken passage, A text is a written or spoken passage, especially one that is used in a school or university for discussion or in an examination.I 'll read the text aloud .",
+                    commentName: "John.Remi",
+                    commentTime: "1 minute ago"
+                  }, 
+                  {
+                    commentText: " A text is a written or spoken passage,A text is a written or spoken passage, especially one that is used in a school or university for discussion or in an examination. I'll read the text aloud .",
+                    commentName: "John.Remi",
+                    commentTime: "1 hour ago"
+                  }
+]
 
 
-export {Trending, TopProducts, videos,productCard, products, photos};
+export { 
+  Trending,
+  TopProducts,
+  videos,
+  productCard,
+  products,
+  photos,
+  commentPage
+};
