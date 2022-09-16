@@ -2,12 +2,12 @@
 // .status{
 //   display: none;
 // }
-.hnbv{
-  display: block;
-}
-  .MobileProductListPage{
-    display: none;
-  }
+// .hnbv{
+//   display: block;
+// }
+//   .MobileProductListPage{
+//     display: none;
+//   }
 .productDetailsLayout {
   // padding: 1rem;
   user-select: none;
@@ -605,15 +605,28 @@ height: 13.5rem;
   font-family: "Muli";
   // font-weight: 400;
 }
+.mobileTopInfo{
+  display: none;
+}
 
 
 
 @media screen and (max-width: $breakpoint-small) {
-  .hnbv{
+  .desktopHorizontaScroll{
     display: none;
   }
   .MobileProductListPage{
     display: block;
+  }
+  .brandcategoryName {
+    display: none;
+    padding: 1rem;
+}
+.mobileTopInfoName{
+  padding: 1rem;
+}
+  .mobileTopInfo{
+    display: grid;
   }
   .content {
     // position: fixed;
@@ -625,13 +638,13 @@ height: 13.5rem;
     // height: 80%;
     // border-radius: 15px;
     z-index: 4;
-
-
     margin-bottom: 0px;
     opacity: 1;
     transition: all .25s ease;
   }
-
+.big-img{
+  display: none;
+}
 
   .swiperSlider { 
     top: 45px;
@@ -644,7 +657,11 @@ height: 13.5rem;
     user-select: none;
   }
  .productName{
+  display: none;
   padding: 1rem;
+ }
+ .mobileTopInfoName{
+  // padding: 1rem;
  }
  .productImageRow{
       position: sticky;
@@ -689,7 +706,7 @@ height: 13.5rem;
     position: inherit;
     // top: 3.1rem;
     // left: 0;
-    max-width: 100vw;
+    max-width: 98vw;
     padding: 0.5rem;
     display: grid;
     grid-auto-flow: column;
@@ -713,7 +730,7 @@ height: 13.5rem;
 }
 .productDetailsContainer {
     // padding: 1rem;
-    width: 100vw;
+    width: 95vw;
 }
 .customerReview {
     width: 100vw;
@@ -729,10 +746,10 @@ height: 13.5rem;
     /* padding-top: 1rem; */
 }
 .customerReviewWrap{
-  min-width: 90%;
+  min-width: 80%;
 }
 .itemDetailinfoContainer{
-  padding: 0rem 1rem;
+  padding: 1rem 1rem;
 }
 #sec1 {
    padding: 0rem;
@@ -752,4 +769,19 @@ height: 13.5rem;
 .brandcategoryName{
   padding: 1rem;
 }
+.customerReviewStarTotalProgressBar {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 1px;
+    margin: 0 10px;
+}
+.brandcategoryImgContainerItems {
+    height: 17rem;
+    width: 17rem;
+    margin: 15px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
 }

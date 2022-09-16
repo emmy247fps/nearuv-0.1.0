@@ -1,3 +1,5 @@
+@import "../../base";
+
 .container{
  display: flex;
  justify-content: center;
@@ -14,7 +16,7 @@
      align-items: center;
      position: relative;
      overflow: hidden;
-     padding-top: 1rem;
+    //  padding-top: 1rem;
 }
 .storeyContainer {
  display: flex;
@@ -34,3 +36,8 @@
   z-index: 1;
 }
 
+@media screen and (max-width: $breakpoint-small){
+  .horizontalScroll .btnScroll {
+    display: none;
+  }
+}
