@@ -21,94 +21,94 @@ import { pDTemplateSwitch, sidebarAction } from "../../../redux/actions";
 import SearchBar from "../../../comp-files/SearchBar";
 import "../../../comp-files/app-style/_productDetailsPage.scss";
 import styled from "styled-components";
-import { SlidingInfo } from "../../../comp-files/components";
+import { MobileProductPageTopImageDetails, SlidingInfo } from "../../../comp-files/components";
 import GlobalSellersTemplate from "../../../comp-files/templates/productDetailsPageTemplates/GlobalSellersTemplate";
 import Product from "../../../comp-files/Product";
 import SlideInNav from "../../../comp-files/components/SildeInNav";
-import HorizontalScroll from "../../../comp-files/components/HorizontalScroll";
-import { MobileProductListPage } from "../../private";
+import HorizontalScroll from "../../../comp-files/components/HorizontalScroll"; 
+import { DesktopProductPageTopImageDetails } from "../../../comp-files/components/DesktopProductPageTopImageDetails";
 
 // import { Header } from "../Display/general";
 
 const ProductDetailsPage = () => {
-  const sidebar = useSelector((state) => state.sidebar);
+  // const sidebar = useSelector((state) => state.sidebar);
   const [displayImage, setDisplayImage] = useState("");
-  const [openSellers, setOpenSellers] = useState(false);
-  const [openAvailableSellers, setOpenAvailableSellers] = useState(false);
+  // const [openSellers, setOpenSellers] = useState(false);
+  // const [openAvailableSellers, setOpenAvailableSellers] = useState(false);
   const product = products[0];
   const [relatedProductHTML, setRelatedProductHTML] = useState(null);
-  const [brandCategoryHTML, setBrandCategoryHTML] = useState(null);
-  const [compareContainerHTML, setCompareContainerHTML] = useState(null);
+  // const [brandCategoryHTML, setBrandCategoryHTML] = useState(null);
+  // const [compareContainerHTML, setCompareContainerHTML] = useState(null);
   const [dataHTMLClassName, setDataHTMLClassName] = useState("");
   const [relatedProductHTMLClassName, setRelatedProductHTMLClassName] =
     useState("");
   const relatedProductRef = useRef(null);
-  const [brandCategoryHTMLClassName, setBrandCategoryHTMLClassName] =
-    useState("");
-  const [compareContainerHTMLClassName, setCompareContainerHTMLClassName] =
-    useState("");
+  // const [brandCategoryHTMLClassName, setBrandCategoryHTMLClassName] =
+  //   useState("");
+  // const [compareContainerHTMLClassName, setCompareContainerHTMLClassName] =
+  //   useState("");
   const brandCategoryRef = useRef(null);
   const compareContainerRef = useRef(null);
   const [dataHTML, setDataHTML] = useState(null);
   const dataRef = useRef(null);
-  useEffect(() => {
-    setDataHTML(dataRef.current.offsetWidth);
-    setDataHTMLClassName(dataRef.current);
-  }, [dataRef]);
+  // useEffect(() => {
+  //   setDataHTML(dataRef.current.offsetWidth);
+  //   setDataHTMLClassName(dataRef.current);
+  // }, [dataRef]);
 
-  useEffect(() => {
-    setRelatedProductHTML(relatedProductRef.current.offsetWidth);
-    setRelatedProductHTMLClassName(relatedProductRef.current);
-    console.log(relatedProductRef.current);
+  // useEffect(() => {
+  //   setRelatedProductHTML(relatedProductRef.current.offsetWidth);
+  //   setRelatedProductHTMLClassName(relatedProductRef.current);
+  //   console.log(relatedProductRef.current);
 
-    console.log(relatedProductRef);
-  }, [relatedProductRef]);
+  //   console.log(relatedProductRef);
+  // }, [relatedProductRef]);
 
-  useEffect(() => {
-    setBrandCategoryHTML(brandCategoryRef.current.offsetWidth);
-    setBrandCategoryHTMLClassName(brandCategoryRef.current);
-    console.log(brandCategoryRef.current);
+  // useEffect(() => {
+  //   setBrandCategoryHTML(brandCategoryRef.current.offsetWidth);
+  //   setBrandCategoryHTMLClassName(brandCategoryRef.current);
+  //   console.log(brandCategoryRef.current);
 
-    console.log(brandCategoryRef);
-  }, [brandCategoryRef]);
+  //   console.log(brandCategoryRef);
+  // }, [brandCategoryRef]);
 
-  useEffect(() => {
-    setCompareContainerHTML(compareContainerRef.current.offsetWidth);
-    setCompareContainerHTMLClassName(compareContainerRef.current);
-    console.log(compareContainerRef.current);
+  // useEffect(() => {
+  //   setCompareContainerHTML(compareContainerRef.current.offsetWidth);
+  //   setCompareContainerHTMLClassName(compareContainerRef.current);
+  //   console.log(compareContainerRef.current);
 
-    console.log(compareContainerRef);
-  }, [compareContainerRef]);
+  //   console.log(compareContainerRef);
+  // }, [compareContainerRef]);
 
   const toggleMenu = () => {
-    setOpenAvailableSellers(!openAvailableSellers);
+    // setOpenAvailableSellers(!openAvailableSellers);
   };
-  const closeSubMenu = () => {
-    dispatch(sidebarAction(false));
-    // dispatch(sideMenuContentAction(false));
-  };
+  // const closeSubMenu = () => {
+  //   dispatch(sidebarAction(false));
+  //   // dispatch(sideMenuContentAction(false));
+  // };
 
-  const dispatch = useDispatch();
-  const { display, loading } = useSelector((state) => state.pDTemplateSwitch);
+  // const dispatch = useDispatch();
+  // const { display, loading } = useSelector((state) => state.pDTemplateSwitch);
 
-  const clickHandler = (info) => {
-    dispatch(pDTemplateSwitch(info));
-  };
-  const { isOpen, setIsOpen } = useState(false);
+  // const clickHandler = (info) => {
+  //   dispatch(pDTemplateSwitch(info));
+  // };
+  // const { isOpen, setIsOpen } = useState(false);
 
-  const closeSlidebar = () => {
-    if (openAvailableSellers) {
-      setOpenAvailableSellers(false);
-    }
-  };
-  const [sideBar, setSideBar] = useState(false);
+  // const closeSlidebar = () => {
+  //   if (openAvailableSellers) {
+  //     setOpenAvailableSellers(false);
+  //   }
+  // };
+  // const [sideBar, setSideBar] = useState(false);
 
-  const toggleSidebar = () => {
-    setSideBar((prevState) => !prevState);
-  };
+  // const toggleSidebar = () => {
+  //   setSideBar((prevState) => !prevState);
+  // };
   const slideInNavProps = {
-    open: openAvailableSellers,
-    setOpen: setOpenAvailableSellers,
+    // open: openAvailableSellers,
+    // setOpen: setOpenAvailableSellers,
     position: "right",
     data: product.sellers,
   };
@@ -123,7 +123,7 @@ const ProductDetailsPage = () => {
   return (
     <div className="productDetailsLayout" >
       {/* <SlideInNav {...slideInNavProps} /> */}
-  <div className="productDetailsLayout" onClick={() => closeSlidebar()}>
+  <div className="productDetailsLayout" >
       <SlideInNav {...slideInNavProps} />
       <div className="content">
         {/* Here is the global product information */}
@@ -134,49 +134,14 @@ const ProductDetailsPage = () => {
               
               <br />
               <div className="column1">
-             <MobileProductListPage />
-          
-                <div className="productImageRow">
-                  <div className="big-img">
-                    <img
-                      src={
-                        displayImage
-                          ? displayImage
-                          : product?.globalProductImage.length > 0
-                          ? product.globalProductImage[0].img
-                          : "/logo.png"
-                      }
-                      alt={product.productName}
-                    />
-                  </div>
-                  <div className="desktopHorizontaScroll">
-                  <HorizontalScroll 
-                                        height='60px' 
-                                        width='369px' 
-                                        reference1={dataHTML}
-                                            name={dataHTMLClassName}
-                                        >
-                  <div className="imageScroll" ref={dataRef}>
-                    {product?.globalProductImage?.map((item, i) => (
-                      <img
-                        className="selectedContainerSmallImgScroll"
-                        src={
-                          product.globalProductImage ? item.img : "/logo.png"
-                        }
-                        key={i}
-                        alt={product.productName}
-                        onClick={() => changeImageHandler(item.img)}
-                      />
-                    ))}
-                  </div>
-                  </HorizontalScroll>
-                  </div>
-                </div>
+             <MobileProductPageTopImageDetails />
+             <DesktopProductPageTopImageDetails />
+                
               </div>
               <div className="column2">
-                <div className="sectionWrap">
+                
                   {/* column 2 */}
-                  <div className="section2">
+                  <div className="column2Section">
                     <h2 className="productName">{product.productName}</h2>
                     <section id="sec1">
                       <div className="itemDetailinfoContainer">
@@ -390,12 +355,12 @@ const ProductDetailsPage = () => {
                             src="https://m.media-amazon.com/images/I/71DDA+p+QqL._AC_SS450_.jpg"
                             alt=""
                           />
-                          <span className="plus">+</span>
+                          <span className="plus"></span>
                           <img
                             src="https://images-na.ssl-images-amazon.com/images/I/61wJ747+kML._AC_UL116_SR116,116_.jpg"
                             alt=""
                           />
-                          <span className="plus">+</span>
+                          <span className="plus"></span>
                           <img
                             src="https://images-na.ssl-images-amazon.com/images/I/71X-+ydMQLL._AC_UL116_SR116,116_.jpg"
                             alt=""
@@ -439,7 +404,7 @@ const ProductDetailsPage = () => {
                         <br />
                       </form>
                     </div>
-                  </div>
+                 
                 </div>
               </div>
             </div>

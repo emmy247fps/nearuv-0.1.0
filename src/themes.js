@@ -308,6 +308,12 @@ tr:nth-child(even) {
   .textarea {
     color: ${props => props.theme.fontColor}
   }
+  .section {
+     background: ${props => props.theme.primary};
+  }
+  .commentFooter, .comment {
+     background: ${props => props.theme.primary};
+  }
 `;
 
 export { LightTheme, DarkTheme, OrangeTheme, GlobalStyles };

@@ -6,7 +6,7 @@
 //   padding: 1%;
 //   font-size: 2em;
 //   text-align: center;
-//   background: white;
+//  
 //   border: 1px solid whitesmoke;
 // }
 // .commentHeaderTitle{
@@ -39,7 +39,7 @@
   // margin-top: 1rem;
   // height: 100vh;
   text-align: center;
-  background: white;
+ 
     }
      .commentHeader{
         font-size: 2em;
@@ -47,18 +47,18 @@
       }
       .commentSideBarSection{
         // width: 26%;
-        border: 1px solid whitesmoke;
-        height: 558px;
-        padding: 10px;
-        padding: 0.5rem;
-        overflow-y: scroll;
+        // border: 1px solid whitesmoke;
+            height: 624px;
+    padding: 10px;
+    padding: 0.5rem;
+    overflow-y: scroll;
 
       }
       .commentSideBarContainer{
          display: flex;
         align-items: center;
         padding: 1rem 0.5rem;
-       border-bottom: 1px solid whitesmoke;
+      //  border-bottom: 1px solid whitesmoke;
         cursor: pointer;
       }
       .commentSideBarContainerDetails{
@@ -77,7 +77,7 @@
     bottom: 0;
     width: -webkit-fill-available;
     position: fixed;
-    background: white;
+   
     align-items: center;
     // border-top: 1px solid whitesmoke;
         }
@@ -165,9 +165,9 @@
     width: 100%;
     border-radius: 0;
     flex-direction: column;
-    height: 498px;
+    height: 560px;
     overflow-y: scroll;
-    background: #fbfbfb;
+   
    }
    .notify{
    position: relative;
@@ -234,18 +234,18 @@
     gap: 5px;
 }
 .section {
-    display: flex;
+   display: flex;
     /* flex-direction: column; */
-    height: 500px;
+    height: 539px;
     width: 100%;
     border-radius: 0;
     flex-direction: column;
     overflow-y: scroll;
-    background: #fbfbfb;
+   
 }
 .commentSideBarSection {
-    border: 1px solid whitesmoke;
-    height: 570px;
+    // border: 1px solid whitesmoke;
+    height: 600px;
     padding: 10px;
     padding: 0.5rem;
     overflow-y: scroll;
@@ -258,14 +258,14 @@
     display: none;
   }
     .section {
-    display: flex;
+        display: flex;
     /* flex-direction: column; */
-     height: 500px;
+    height: 543px;
     width: 100%;
     border-radius: 0;
     flex-direction: column;
     overflow-y: scroll;
-    background: #fbfbfb;
+   
 }
 .commentSideBar{
   display: none;
@@ -309,7 +309,7 @@
     border-radius: 0;
     flex-direction: column;
     overflow-y: scroll;
-    background: #fbfbfb;
+   
 }
 .muted {
    display: grid;
@@ -337,7 +337,7 @@
     width: 95%;
     height: 7%;
     position: fixed;
-    background: white;
+   
     align-items: center;
 }
 .mobileCommentIcons{

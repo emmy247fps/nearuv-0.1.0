@@ -1,5 +1,5 @@
 // import {react} from "react";
-import { Home, ProductListPage, PlayerPage, ItemDetailPage, ProductDetailsPage,  } from "./Display/general";
+import { Home, ProductListPage, PlayerPage, ItemDetailPage, ProductDetailsPage, ProfilePage } from "./Display/general";
 import {CommentPage} from "./Display/private";
 
 const allPages = {
@@ -9,7 +9,8 @@ const allPages = {
     PlayerPage,
     ItemDetailPage,
     ProductDetailsPage,
-    CommentPage
+    CommentPage,
+    ProfilePage
   },
   private:{
     
@@ -41,6 +42,11 @@ const pubRoutes = [
     path: "/comment",
     name: "Comment Page",
     element: allPages.general.CommentPage,
+  },
+   {
+    path: "/profile",
+    name: "profile Page",
+    element: allPages.general.ProfilePage,
   },
 ];
 
