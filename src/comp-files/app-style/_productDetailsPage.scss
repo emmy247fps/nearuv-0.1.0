@@ -469,13 +469,14 @@ height: 13.5rem;
         font-family: verdana, arial, helvetica, sans-serif ;
 }
 .customerReviewStar {
-  display: flex;
+  display: grid;
   padding: 1rem 1rem;
 }
 
 .customerReviewStarTotal {
-  color: #2a5bda;
-  width: max-content;
+  color: #ff;
+    display: flex;
+    justify-content: space-between;
 }
 
 .customerReviewStarTotalProgressBar {
@@ -484,7 +485,7 @@ height: 13.5rem;
   border-radius: 10px;
   // background-color: #f5f8ff;
   padding: 1px;
-  margin: 0 10px;
+  // margin: 0 10px;
 }
 
 .progressBar {
@@ -507,15 +508,13 @@ height: 13.5rem;
 }
 
 .customerReviewStarPercentage {
-  // font-size: 18px;
-  color: #323357;
-  font-family: "Muli";
-  // font-weight: 400;
+display: flex;
+    font-family: "Muli";
+    justify-content: end;
 }
 .mobileTopInfo{
   display: none;
 }
-  
 
 @media screen and (max-width: $breakpoint-small) {
   .desktopHorizontaScroll{

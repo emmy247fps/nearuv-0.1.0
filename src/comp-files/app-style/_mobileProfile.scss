@@ -5,8 +5,10 @@
 
 @media screen and (max-width: $breakpoint-small) {
     .profileContainer{
- display: flex;   
- background: black;
+ display: grid; 
+//  width: 100vh;
+//  height: 100vh;  
+//  background: black;
 }
 
 .profileContainerImage img{
@@ -17,19 +19,26 @@ height:  60vh;
      -webkit-mask-image: linear-gradient(to bottom, #2c2929, #0f0e0e, #2c2a2a00);
 
 }
+.profileContainerGradient{
+      width: 100%;
+    height: 120px;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000000 96%);
+    position: relative;
+}
 .profileContainerDetails{
 left: 0;
     bottom: -589px;
     z-index: 5;
     right: 0;
     position: relative;
+        margin-top: -320px;
 }
 .col1{
-        padding-top: 100px;
-    -webkit-mask-image: linear-gradient(to bottom, #2c292900, #0f0e0e, #2c2a2a);
+        // padding-top: 100px;
+    // -webkit-mask-image: linear-gradient(to bottom, #2c292900, #0f0e0e, #2c2a2a);
     background: black;
     color: white;
-    margin-top: -250px;
+    // margin-top: -250px;
 }
 .col2, .col3{
 background: black;
@@ -39,12 +48,13 @@ background: black;
     width: 100vw;
     display: flex;
     text-align: center;
-    padding: 1.2rem 0;
+    justify-content: space-around;
+    padding:0;
 }
  
     .profile-stats li {
-        font-size: 1.4rem;
-        flex: 1;
+        font-size: 1rem;
+        // flex: 1;
         margin: 0;
         list-style-type: none;
     }
@@ -53,7 +63,7 @@ background: black;
         display: block;
     }
     .profile-bio {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
        margin-top: 0.3rem;
@@ -64,19 +74,26 @@ background: black;
 }
 .profileIcon{
 display: flex;
-    // flex-direction: row;
     justify-content: space-around;
 }
-.profileGrid{
-padding: 10px 0px 4px 4px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.MobileProfileGrid{
+ display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
 }
-.profileGrid img{
+.MobileProfileGridImg{
     height: 8rem;
-    width: 7.5rem;
-    // object-fit: contain
+    // width: 7.5rem;
+    float: left;
+//   padding-bottom: 5px;
+}
+.MobileProfileGridImg img{
+    width: 100%;
+    height: 100%;
+}
+.profileContainer::-webkit-scrollbar-thumb
+::-webkit-scrollbar {
+   display: none;
 }
 
 }
+

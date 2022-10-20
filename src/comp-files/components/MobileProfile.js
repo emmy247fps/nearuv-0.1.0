@@ -17,22 +17,24 @@ const MobileProfile = () => {
           
         />
       </div>
+      
       <div className="profileContainerDetails">
+        <div className="profileContainerGradient"></div>
         <div className="col1">
-          <div class="profile-stats">
+          <div className="profile-stats">
             <ul>
               <li>
-                <span class="profile-stat-count">164</span> posts
+                <span className="profile-stat-count">164</span> posts
               </li>
               <li>
-                <span class="profile-stat-count">188</span> followers
+                <span className="profile-stat-count">188</span> followers
               </li>
               <li>
-                <span class="profile-stat-count">206</span> following
+                <span className="profile-stat-count">206</span> following
               </li>
             </ul>
-            <div class="profile-bio">
-              <span class="profile-real-name">Jane Doe</span>
+            <div className="profile-bio">
+              <span className="profile-real-name">Jane Doe</span>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit 📷✈️🏕️
               </p>
@@ -43,46 +45,88 @@ const MobileProfile = () => {
               <MdOutlineExplore size={30} />
               <MdOutlineShop size={30} />
             </div>
-            <div className="profileGrid">
-              <div>
+            <div className="MobileProfileGrid">
+              <div className="MobileProfileGridImg">
                 <img
                   src="https://observer.com/wp-content/uploads/sites/2/2017/03/c6qa1mmwcaelrfk.jpg?quality=80&w=1200&strip"
                   alt=""
                 />
-                <img
-                  src="https://www.bellanaija.com/wp-content/uploads/2022/01/271692703_249792950622781_8820093464004144355_n.jpg"
-                  alt=""
-                />{" "}
-                <img
-                  src="https://guardian.ng/wp-content/uploads/2021/09/240944433_110593068016775_5713504258986737220_n-3.jpg"
-                  alt=""
-                />
               </div>
-              <div>
+              <div  className="MobileProfileGridImg">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Alex_Telles_2021.jpg/800px-Alex_Telles_2021.jpg"
                   alt=""
                 />
-                <img
-                  src="https://guardian.ng/wp-content/uploads/2021/09/78937464_850584902026570_6936442964674855449_n-1.jpg"
-                  alt=""
-                />{" "}
-                <img
-                  src="https://www.naijanews.com/wp-content/uploads/2022/06/Davido-Songs-Lyrics.webp"
-                  alt=""
-                />
               </div>
-              <div>
+              <div className="MobileProfileGridImg">
                 <img
                   src="https://dailytrust.com/_next/image?url=https%3A%2F%2Fcms.dailytrust.com.ng%2Fwp-content%2Fuploads%2F2022%2F01%2FDavido-1.jpg&w=1200&q=75"
                   alt=""
                 />
+              </div>
+                 <div className="MobileProfileGridImg">
+                <img
+                  src="https://naijalebrity.com/photos/naijalebrity_XgacS9i5NWTzfKARtNhNfAKG/Tiwa%20Savage%201.jpg"
+                  alt=""
+                /> 
+              </div>
+                  <div className="MobileProfileGridImg">
+                 <img
+                  src="https://guardian.ng/wp-content/uploads/2021/09/240944433_110593068016775_5713504258986737220_n-3.jpg"
+                  alt=""
+                />
+              </div>
+                   <div className="MobileProfileGridImg">
                 <img
                   src="https://www.nme.com/wp-content/uploads/2020/08/Burna-Boy-2020-Press-Image-Nicolas-Gerardin-696x442.jpg"
                   alt=""
-                />{" "}
+                />
+              </div>
+               <div className="MobileProfileGridImg">
+                <img
+                  src="https://dailytrust.com/_next/image?url=https%3A%2F%2Fcms.dailytrust.com.ng%2Fwp-content%2Fuploads%2F2022%2F01%2FDavido-1.jpg&w=1200&q=75"
+                  alt=""
+                />
+              </div>
+                 <div className="MobileProfileGridImg">
                 <img
                   src="https://naijalebrity.com/photos/naijalebrity_XgacS9i5NWTzfKARtNhNfAKG/Tiwa%20Savage%201.jpg"
+                  alt=""
+                /> 
+              </div>
+                  <div className="MobileProfileGridImg">
+                 <img
+                  src="https://guardian.ng/wp-content/uploads/2021/09/240944433_110593068016775_5713504258986737220_n-3.jpg"
+                  alt=""
+                />
+              </div>
+                   <div className="MobileProfileGridImg">
+                <img
+                  src="https://www.nme.com/wp-content/uploads/2020/08/Burna-Boy-2020-Press-Image-Nicolas-Gerardin-696x442.jpg"
+                  alt=""
+                />
+              </div>
+               <div className="MobileProfileGridImg">
+                <img
+                  src="https://dailytrust.com/_next/image?url=https%3A%2F%2Fcms.dailytrust.com.ng%2Fwp-content%2Fuploads%2F2022%2F01%2FDavido-1.jpg&w=1200&q=75"
+                  alt=""
+                />
+              </div>
+                 <div className="MobileProfileGridImg">
+                <img
+                  src="https://naijalebrity.com/photos/naijalebrity_XgacS9i5NWTzfKARtNhNfAKG/Tiwa%20Savage%201.jpg"
+                  alt=""
+                /> 
+              </div>
+                  <div className="MobileProfileGridImg">
+                 <img
+                  src="https://guardian.ng/wp-content/uploads/2021/09/240944433_110593068016775_5713504258986737220_n-3.jpg"
+                  alt=""
+                />
+              </div>
+                   <div className="MobileProfileGridImg">
+                <img
+                  src="https://www.nme.com/wp-content/uploads/2020/08/Burna-Boy-2020-Press-Image-Nicolas-Gerardin-696x442.jpg"
                   alt=""
                 />
               </div>

@@ -314,6 +314,10 @@ tr:nth-child(even) {
   .commentFooter, .comment {
      background: ${props => props.theme.primary};
   }
+  .profileIconContainer {
+    background: ${props => props.theme.primary};
+  }
 `;
+
 
 export { LightTheme, DarkTheme, OrangeTheme, GlobalStyles };

@@ -7,7 +7,7 @@ const SearchIcon = lazy(()=>import('./SearchIcon'));
 const MobileProductPageTopImageDetails = lazy(()=>import('./MobileProductPageTopImageDetails'));
 const MobileProfile = lazy(()=>import('./MobileProfile'));
 const DesktopProfile = lazy(()=>import('./DesktopProfile'));
-
+const DesktopProductPageTopImageDetails = lazy(()=>import('./DesktopProductPageTopImageDetails'));
 export {
     SlidingInfo,
     TheAvatar,
@@ -15,5 +15,6 @@ export {
     SearchIcon,
     MobileProductPageTopImageDetails,
     MobileProfile,
-    DesktopProfile
+    DesktopProfile,
+    DesktopProductPageTopImageDetails
 }

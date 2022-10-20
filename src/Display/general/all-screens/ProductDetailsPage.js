@@ -552,135 +552,157 @@ const ProductDetailsPage = () => {
                   </tbody>
                 </div>
               </div>
-              <div class="customerReview">
+              <div className="customerReview">
                 <div className="customerReviewName">
                   <h2>Customer reviews</h2>
                 </div>
-                <div className="customerReviewWrap">
-                  <div class="customerReviewStar">
-                    <span class="customerReviewStarTotal">5 star</span>
-                    <div class="customerReviewStarTotalProgressBar">
+                 <div className="customerReviewWrap">
+                  <div className="customerReviewStar">
+                    <div className="customerReviewStarTotal">
+                      <span>5 star</span>
+                     <span>+1m</span>
+                     </div>
+                    <div className="customerReviewStarTotalProgressBar">
                       <progress
-                        class="progressBar"
+                        className="progressBar"
                         max="100"
                         value="100"
                       ></progress>
                     </div>
-                    <span class="customerReviewStarPercentage">+1m</span>
                   </div>
 
-                  <div class="customerReviewStar">
-                    <span class="customerReviewStarTotal">4 star</span>
-                    <div class="customerReviewStarTotalProgressBar">
+                  <div className="customerReviewStar">
+                    <div className="customerReviewStarTotal">
+                      <span>4 star</span>
+                     <span>+100k</span>
+                     </div>
+                    <div className="customerReviewStarTotalProgressBar">
                       <progress
-                        class="progressBar"
+                        className="progressBar"
                         max="100"
                         value="80"
                       ></progress>
                     </div>
-                    <span class="customerReviewStarPercentage">+100k</span>
                   </div>
 
-                  <div class="customerReviewStar">
-                    <span class="customerReviewStarTotal">3 star</span>
-                    <div class="customerReviewStarTotalProgressBar">
+                  <div className="customerReviewStar">
+                    <div className="customerReviewStarTotal">
+                      <span>3 star</span>
+                     <span>+10k</span>
+                     </div>
+                    <div className="customerReviewStarTotalProgressBar">
                       <progress
-                        class="progressBar"
+                        className="progressBar"
                         max="100"
                         value="60"
                       ></progress>
                     </div>
-                    <span class="customerReviewStarPercentage">+10k</span>
                   </div>
 
-                  <div class="customerReviewStar">
-                    <span class="customerReviewStarTotal">2 star</span>
-                    <div class="customerReviewStarTotalProgressBar">
+                  <div className="customerReviewStar">
+                    <div className="customerReviewStarTotal">
+                      <span>2 star</span>
+                     <span>+100k</span>
+                     </div>
+                    <div className="customerReviewStarTotalProgressBar">
                       <progress
-                        class="progressBar"
+                        className="progressBar"
                         max="100"
                         value="40"
                       ></progress>
                     </div>
-                    <span class="customerReviewStarPercentage">+1k</span>
+                    
                   </div>
 
-                  <div class="customerReviewStar">
-                    <span class="customerReviewStarTotal">1 star</span>
-                    <div class="customerReviewStarTotalProgressBar">
+                  <div className="customerReviewStar">
+                    <div className="customerReviewStarTotal">
+                      <span>1 star</span>
+                     <span>+100</span>
+                     </div>
+                    <div className="customerReviewStarTotalProgressBar">
                       <progress
-                        class="progressBar"
+                        className="progressBar"
                         max="100"
                         value="20"
                       ></progress>
                     </div>
-                    <span class="customerReviewStarPercentage">+100</span>
                   </div>
                 </div>
               </div>
-              <div class="customerReview">
+              <div className="customerReview">
                 <div className="customerReviewName">
                   <h2>Seller reviews</h2>
                 </div>
                 <div className="customerReviewWrap">
-                  <div class="customerReviewStar">
-                    <span class="customerReviewStarTotal">5 star</span>
-                    <div class="customerReviewStarTotalProgressBar">
+                  <div className="customerReviewStar">
+                    <div className="customerReviewStarTotal">
+                      <span>5 star</span>
+                     <span>+1m</span>
+                     </div>
+                    <div className="customerReviewStarTotalProgressBar">
                       <progress
-                        class="progressBar"
+                        className="progressBar"
                         max="100"
                         value="100"
                       ></progress>
                     </div>
-                    <span class="customerReviewStarPercentage">+1m</span>
                   </div>
 
-                  <div class="customerReviewStar">
-                    <span class="customerReviewStarTotal">4 star</span>
-                    <div class="customerReviewStarTotalProgressBar">
+                  <div className="customerReviewStar">
+                    <div className="customerReviewStarTotal">
+                      <span>4 star</span>
+                     <span>+100k</span>
+                     </div>
+                    <div className="customerReviewStarTotalProgressBar">
                       <progress
-                        class="progressBar"
+                        className="progressBar"
                         max="100"
                         value="80"
                       ></progress>
                     </div>
-                    <span class="customerReviewStarPercentage">+100k</span>
                   </div>
 
-                  <div class="customerReviewStar">
-                    <span class="customerReviewStarTotal">3 star</span>
-                    <div class="customerReviewStarTotalProgressBar">
+                  <div className="customerReviewStar">
+                    <div className="customerReviewStarTotal">
+                      <span>3 star</span>
+                     <span>+10k</span>
+                     </div>
+                    <div className="customerReviewStarTotalProgressBar">
                       <progress
-                        class="progressBar"
+                        className="progressBar"
                         max="100"
                         value="60"
                       ></progress>
                     </div>
-                    <span class="customerReviewStarPercentage">+10k</span>
                   </div>
 
-                  <div class="customerReviewStar">
-                    <span class="customerReviewStarTotal">2 star</span>
-                    <div class="customerReviewStarTotalProgressBar">
+                  <div className="customerReviewStar">
+                    <div className="customerReviewStarTotal">
+                      <span>2 star</span>
+                     <span>+100k</span>
+                     </div>
+                    <div className="customerReviewStarTotalProgressBar">
                       <progress
-                        class="progressBar"
+                        className="progressBar"
                         max="100"
                         value="40"
                       ></progress>
                     </div>
-                    <span class="customerReviewStarPercentage">+1k</span>
+                    
                   </div>
 
-                  <div class="customerReviewStar">
-                    <span class="customerReviewStarTotal">1 star</span>
-                    <div class="customerReviewStarTotalProgressBar">
+                  <div className="customerReviewStar">
+                    <div className="customerReviewStarTotal">
+                      <span>1 star</span>
+                     <span>+100</span>
+                     </div>
+                    <div className="customerReviewStarTotalProgressBar">
                       <progress
-                        class="progressBar"
+                        className="progressBar"
                         max="100"
                         value="20"
                       ></progress>
                     </div>
-                    <span class="customerReviewStarPercentage">+100</span>
                   </div>
                 </div>
               </div>

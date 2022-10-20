@@ -1,18 +1,216 @@
  @import "../../base";
-
+.DesktopProfileContainerSection2{
+    width: -webkit-fill-available;
+}
+.DesktopProfileContainer{
+    display: flex;
+}
 .DesktopProfile{
- display: flex;
+//  display: flex;
+ padding:0 1rem;
+ user-select: none;
+}
+.DesktopProfileContainerSection2 ul {
+    display: flex;
+    text-align: center;
+    padding: 1.2rem 0;
+}
+.profileStatsContainer{
+    display: flex;
+}
+.profileStatsContainer li {
+        font-size: 1rem;
+    flex: 0 5;
+    margin: 12px 34px;
+    list-style-type: none;
+}
+.profileBio, .profileRealName{
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.5rem 0;
+}
+.DesktopProfileContainerImage img{
+    height: 100%;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to bottom, #2c2929, #0f0e0e, rgba(44, 42, 42, 0));
+}
+.DesktopProfileContainerImage{
+    position: sticky;
+    top: 0px;
+    left: 5px;
+    // padding: 19px 0;
+}
+.DesktopProfileContainerSection1{
+    
+height: auto;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
+.ProfileStatus{
+        position: inherit;
+    left: 0;
+    max-width: 50vw;
+       margin: 1rem 0rem;
+    display: flex;
+    grid-auto-flow: column;
+    user-select: none;
+    z-index: 0;
 
+}
+.ProfileStatus::-webkit-scrollbar{
+    display: none;
+}
+.ProfileStatusItem{
+       position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+}
+.ProfileStatusItem img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.ProfileStatusItem::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background-image: linear-gradient();
+    border-radius: inherit;
+    z-index: -1;
+}
+.ProfileStatusWrap{
+  width: 6rem;
+  height: 7rem;
+}
+.ProfileStatusTitle{
+    display: flex;
+    justify-content: center;
+        padding: 10px 0px;
+}
+.friendSugest{
+        position: inherit;
+    left: 0;
+    max-width: 50vw;
+       margin: 1rem 0rem;
+    display: flex;
+    grid-auto-flow: column;
+    user-select: none;
+    z-index: 0;
 
+}
+.friendSugest::-webkit-scrollbar{
+    display: none;
+}
+.friendSugestItem{
+         width: 7rem;
+    height: 8rem;
+       position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    // border-radius: 50%;
+        // border: 2px solid red;
 
+            box-shadow: 0px 0px 10px -5px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.friendSugestItem img{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.friendSugestItem::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background-image: linear-gradient();
+    border-radius: inherit;
+    z-index: -1;
+}
+// .friendSugestWrap{
+//   width: 6rem;
+//   height: 7rem;
+// }
+.friendSugestTitle{
+    display: flex;
+    justify-content: center;
+        padding: 10px 0px;
+}
+
+.DesktopProfileContainerImagewrap{
+      width: 30rem;
+    height: 30rem;
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileGridImg {
+  float: left;
+ width: 12.9rem;
+height: 13rem;
+  padding-bottom: 5px;
+}
+.profileGrid{
+ display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+}
+   
+.profileGrid::after {
+  content: "";
+  clear: both;
+}
+.profileGridImg img{
+    width: 100%;
+    height: 100%;
+}
+   .profileIconContainer{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+        top: 0px;
+} 
+.profileIcon{
+   display: flex;
+    column-gap: 10px;
+    margin: 0px 26px;
+    padding-bottom: 1rem;
+}
+ 
+.followBtn{
+    padding: 10px 10px;
+    margin: auto;
+}
+.DesktopProfileContainerSection2Top{
+    display: flex;
+    flex-direction: row;
+}
+  
+   
+   
 
 
  @media screen and (max-width: $breakpoint-small) {
-
-
-
+.DesktopProfile{
+   display: none;
+}
 
 
  }

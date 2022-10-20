@@ -1,4 +1,13 @@
+@import "../../base";
+
 .profilePageContainer{
  height: 100vh;
- background: black;
+ // background: black;
+}
+
+
+@media screen and (max-width: $breakpoint-medium) {
+.DesktopProfile{
+ display: none;
+}
 }

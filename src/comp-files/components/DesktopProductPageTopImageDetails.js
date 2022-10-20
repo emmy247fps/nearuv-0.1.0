@@ -61,3 +61,5 @@ export const DesktopProductPageTopImageDetails = () => {
                 </div>
   )
 }
+
+export default DesktopProductPageTopImageDetails

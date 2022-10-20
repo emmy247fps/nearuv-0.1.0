@@ -29,8 +29,8 @@ const BlockTemplate2 = (props) => {
                 <div className="productDisplayContainerInfo__wrap">
                 <div className="title">{product.productName}</div>
                 <div>
-                  <span>4.5***</span>&nbsp;
-                  <span>(2000)***</span>
+                  <span>4.5⭐⭐⭐</span>&nbsp;
+                  <span>(2000)⭐⭐⭐</span>
                 </div>
                 <div>More Info</div>
               </div>
