@@ -54,7 +54,7 @@ const Home = () => {
   
   return (
     <>
-      <Status className='status' />
+      {/* <Status className='status' /> */}
 
       <ItemsTemplate 
        data = {productCard}

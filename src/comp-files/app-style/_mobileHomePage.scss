@@ -1,0 +1,110 @@
+@import "../../base";
+
+
+@media screen and (max-width: $breakpoint-small) {
+.MobileStatus{
+ height: 6rem;
+ box-shadow: -20px -5px 5px 2px;
+}
+// .MobileHomePageContainer{
+// height: 100vh;
+// width: auto;
+// }
+.cardContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+        padding: 0px 10px;
+               border-bottom: 15px solid black;
+                //    box-shadow: 0px 0px 2px 1px grey;
+}
+.mobileHomePageMainPostCard{
+display: flex;
+    flex-direction: column;
+// height: 30%;
+max-width: 80%;
+ // box-shadow: -20px -5px 5px 2px;
+     padding-right: 10px
+}
+.mobileHomePageMainPostCardWrap{
+ display: grid;
+ // gap: 2rem;
+}
+.mobileHomePageMainPostCardWrapInfo{
+ display: flex;
+ gap: 2rem;
+}
+ .mobileHomePageMainPostCardWrapInfoImg{
+       max-height: 20rem;
+    object-fit: cover;
+ }
+ .mobileHomePageMainPostCardWrapInfoImg img{
+  height: 100%;
+  width: 100%;
+ }
+ .mobileHomePageMainPostCardDetails{
+  display: flex;
+ }
+ .MobileProductScrollableContainer{
+      align-items: center;
+    display: flex;
+
+ }
+ .mobileHomePageMainPostCardHeader{
+    display: flex;
+    align-items: center;
+ }
+.MobileProductScrollable{
+//     width: 30%;
+//    position: absolute;
+//     top: 1rem;
+//     left: 0;
+//     max-width: 100vw;
+//     padding: .5rem;
+//     display: grid;
+//     grid-auto-flow: column;
+//     column-gap: .3rem;
+//     overflow-x: auto;
+//     user-select: none;
+//     z-index: 0;
+    justify-content: flex-end;
+        max-height: 100vw;
+    top: 1rem;
+    left: 0px;
+    max-width: 100vw;
+    padding: 0.5rem;
+    display: grid;
+    /* grid-auto-flow: column; */
+    column-gap: 0.3rem;
+    overflow-x: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 0;
+}
+.MobileProductScrollable::-webkit-scrollbar{
+    display: none;
+}
+.MobileProductScrollableItem{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 4px solid red;
+    border-radius: 50%;
+}
+.MobileProductScrollableItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.mobileHomePageCardIcon{
+display: flex;
+justify-content: flex-start;
+gap: 20px;
+}
+.mobileHomePageCardIconContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0
+}
+}

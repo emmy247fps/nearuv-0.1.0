@@ -15,6 +15,7 @@ const  ItemDetailPage = lazy(()=> import('./all-screens/ItemDetailPage'));
 const GlobalStoreProductInfo = lazy(() => import ('../../comp-files/GlobalProductStoreInfoCanvas'))
 const  ProductDetailsPage = lazy(()=> import('./all-screens/ProductDetailsPage'));
 const  ProfilePage = lazy(()=> import('./all-screens/ProfilePage'));
+const  HomePage = lazy(()=> import('./all-screens/HomePage'));
 
 export {
     Home,
@@ -29,5 +30,6 @@ export {
     ItemDetailPage,
     GlobalStoreProductInfo,
     ProductDetailsPage,
-    ProfilePage
+    ProfilePage,
+    HomePage
 };

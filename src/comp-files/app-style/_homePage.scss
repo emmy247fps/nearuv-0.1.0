@@ -1,0 +1,10 @@
+@import "../../base";
+.MobileHomePage{
+display: none;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+.MobileHomePage{
+display: block;
+}
+}

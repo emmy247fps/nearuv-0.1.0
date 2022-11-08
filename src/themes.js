@@ -317,6 +317,9 @@ tr:nth-child(even) {
   .profileIconContainer {
     background: ${props => props.theme.primary};
   }
+  .MobileProductScrollableContainer {
+    background: ${props => props.theme.productCardShadow};
+  }
 `;
 
 
